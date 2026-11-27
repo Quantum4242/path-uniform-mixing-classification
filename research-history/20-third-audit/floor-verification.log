@@ -1,0 +1,51 @@
+odd three-block normalization PASS
+odd three-block with no extra relations, floor 1/100 PASS
+odd three-block with extra relations, floor 1/100 PASS
+odd exception q= 33 floor ratio= 42831862673/847585614096 PASS
+odd exception q= 39 floor ratio= 9760481/636722832 PASS
+even b=0 negative U PASS
+even b=0 signs=(-1, -1), no relations floor 1/100 PASS
+even b=0 signs=(-1, -1), general floor 1/100 PASS
+even b=0 signs=(-1, 1), no relations floor 1/100 PASS
+even b=0 signs=(-1, 1), general floor 1/100 PASS
+even b=0 signs=(1, -1), no relations floor 1/100 PASS
+even b=0 signs=(1, -1), general floor 1/100 PASS
+even b=0 signs=(1, 1), no relations floor 1/100 PASS
+even b=0 signs=(1, 1), general floor 1/100 PASS
+even b=1 negative U PASS
+even b=1 signs=(-1, -1), no relations floor 1/100 PASS
+even b=1 signs=(-1, -1), general floor 1/100 PASS
+even b=1 signs=(-1, 1), no relations floor 1/100 PASS
+even b=1 signs=(-1, 1), general floor 1/100 PASS
+even b=1 signs=(1, -1), no relations floor 1/100 PASS
+even b=1 signs=(1, -1), general floor 1/100 PASS
+even b=1 signs=(1, 1), no relations floor 1/100 PASS
+even b=1 signs=(1, 1), general floor 1/100 PASS
+even exception 20 0 floor ratio= 94010139/1266640168 PASS
+even exception 20 1 floor ratio= 1610796525/4857335848 PASS
+even exception 28 0 floor ratio= 2487228703/13728110040 PASS
+even exception 28 1 floor ratio= 133492232099/446664665088 PASS
+even exception 40 0 floor ratio= 1752088891/12183531264 PASS
+even exception 40 1 floor ratio= 19769906036/272884834599 PASS
+even exception 50 0 floor ratio= 55156219957/283852805110 PASS
+even exception 50 1 floor ratio= 317250915367/6495199334344 PASS
+even exception 56 0 floor ratio= 89452933839/430514963560 PASS
+even exception 56 1 floor ratio= 258063999097/1158076879685 PASS
+even exception 70 0 floor ratio= 103426158379/839169226650 PASS
+even exception 70 1 floor ratio= 296455106527/3242268343113 PASS
+even exception 80 0 floor ratio= 216311644425/1243864257694 PASS
+even exception 80 1 floor ratio= 204225364961/1479338965984 PASS
+even exception 98 0 floor ratio= 482062321448/2185736649149 PASS
+even exception 98 1 floor ratio= 20101576836759/102303490730296 PASS
+even exception 100 0 floor ratio= 135085049387/755465269482 PASS
+even exception 100 1 floor ratio= 1424999299253/9492076459512 PASS
+even exception 110 0 floor ratio= 1354457753467/6969232224880 PASS
+even exception 110 1 floor ratio= 5465057910343/40881652115656 PASS
+even exception 112 0 floor ratio= 687151899013/3388707892674 PASS
+even exception 112 1 floor ratio= 239712270107/1125183085752 PASS
+even exception 130 0 floor ratio= 568604857379/2928778007565 PASS
+even exception 130 1 floor ratio= 44423332664567/321769629437784 PASS
+even exception 140 0 floor ratio= 294979867107/1648035156448 PASS
+even exception 140 1 floor ratio= 53601692253139/415686716842192 PASS
+ALL UNIFORM FLOOR ASSERTIONS PASS: 1/10000 for the joint phase law
+rescaled joint floor 1/100 and timing-noise bound: exact constants PASS

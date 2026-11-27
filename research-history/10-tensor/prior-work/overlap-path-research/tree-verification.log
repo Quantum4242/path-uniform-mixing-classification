@@ -1,0 +1,15 @@
+PASS P=3 R=4: 144 ordered triple pairs, disjoint spanning trees and 4 exact pair rates
+PASS P=4 R=5: 1440 ordered triple pairs, disjoint spanning trees and 4 exact pair rates
+PASS P=5 R=6: 7200 ordered triple pairs, disjoint spanning trees and 4 exact pair rates
+PASS parallel             P>=6,R>=8   : numerator=2*x**2*y**2 + 24*x**2*y + 58*x**2 + 16*x*y**2 + 183*x*y + 389*x + 18*y**2 + 159*y + 21; denominator=x*y + 8*x + 6*y + 48
+PASS parallel             P=5,R>=18   : numerator=4*y**2 + 80*y + 90; denominator=5*y + 90
+PASS same_row             P>=6,R>=8   : numerator=8*x**2*y**3 + 152*x**2*y**2 + 928*x**2*y + 1828*x**2 + 76*x*y**3 + 1414*x*y**2 + 8390*x*y + 15878*x + 150*y**3 + 2655*y**2 + 14571*y + 24240; denominator=4*x*y**2 + 60*x*y + 224*x + 24*y**2 + 360*y + 1344
+PASS same_row             P=5,R>=18   : numerator=82*y**3 + 3853*y**2 + 59569*y + 302580; denominator=20*y**2 + 700*y + 6120
+PASS same_col             P>=6,R>=8   : numerator=8*x**3*y**2 + 108*x**3*y + 334*x**3 + 104*x**2*y**2 + 1374*x**2*y + 4087*x**2 + 416*x*y**2 + 5310*x*y + 14707*x + 516*y**2 + 6210*y + 14874; denominator=4*x**2*y + 32*x**2 + 44*x*y + 352*x + 120*y + 960
+PASS same_col             P=5,R>=18   : numerator=196*y**2 + 6086*y + 45180; denominator=80*y + 1440
+PASS different_cells      P>=6,R>=8   : numerator=4*x**3*y**3 + 76*x**3*y**2 + 464*x**3*y + 914*x**3 + 52*x**2*y**3 + 958*x**2*y**2 + 5600*x**2*y + 10367*x**2 + 208*x*y**3 + 3640*x*y**2 + 19619*x*y + 31694*x + 258*y**3 + 4131*y**2 + 18780*y + 19866; denominator=2*x**2*y**2 + 30*x**2*y + 112*x**2 + 22*x*y**2 + 330*x*y + 1232*x + 60*y**2 + 900*y + 3360
+PASS different_cells      P=5,R>=18   : numerator=98*y**3 + 4313*y**2 + 61157*y + 275895; denominator=40*y**2 + 1400*y + 12240
+PASS axis_interior_lower  P>=6,R>=8   : numerator=4*x**2*y**2 + 60*x**2*y + 218*x**2 + 32*x*y**2 + 456*x*y + 1537*x + 36*y**2 + 396*y + 699; denominator=2*x*y + 16*x + 12*y + 96
+PASS axis_interior_lower  P=5,R>=18   : numerator=8*y**2 + 160*y + 180; denominator=10*y + 180
+PASS axes_lower           P>=6,R>=8   : numerator=2*x**2*y + 20*x**2 + 16*x*y + 169*x + 18*y + 249; denominator=x + 6
+PASS axes_lower           P=5,R>=18   : numerator=4*y + 140; denominator=5

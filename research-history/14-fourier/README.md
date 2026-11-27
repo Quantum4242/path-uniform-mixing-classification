@@ -1,0 +1,3 @@
+# Fourier-density path research
+
+Working, unsigned research note, not a publication or full Lean proof. `research-note.md` gives the analytic proofs and explicit limits. `verify_fourier.py` checks exact moment identities, symmetric mixed-block support counts, central-axis polynomial relations, exact correction coefficients, and positivity/time-grid constants. Run `python verify_fourier.py` with SymPy installed. `verification.log` is the actual captured output. The script does not enumerate all short cyclotomic relations and does not formally prove the general number-theoretic argument. No external peer review or priority guarantee.

@@ -1,0 +1,4 @@
+even bias 0 : 36 exact evaluations; degree <=8 => 4 polynomial identities PASS
+even bias 1 : 36 exact evaluations; degree <=8 => 4 polynomial identities PASS
+odd three-block: 36 exact evaluations; degree <=8 => 4 polynomial identities PASS
+TOTAL: 108 exact evaluations, 12 general polynomial identities PASS

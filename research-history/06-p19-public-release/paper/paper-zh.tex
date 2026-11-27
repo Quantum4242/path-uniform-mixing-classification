@@ -1,0 +1,180 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage{fontspec,amsmath,amssymb,amsthm,booktabs,array,hyperref,microtype}
+\setmainfont{Liberation Serif}
+\hypersetup{colorlinks=true,linkcolor=black,citecolor=black,urlcolor=blue}
+\setlength{\parindent}{1em}\setlength{\parskip}{3pt}
+\setlength{\emergencystretch}{3em}\sloppy
+\newcommand{\R}{\mathbb R}\newcommand{\Q}{\mathbb Q}\newcommand{\Z}{\mathbb Z}\newcommand{\T}{\mathbb T}
+\newcommand{\norm}[1]{\left\lVert #1\right\rVert_\infty}
+\DeclareMathOperator{\conv}{conv}\DeclareMathOperator{\ri}{ri}
+\usepackage{xeCJK}
+\setCJKmainfont[AutoFakeSlant=0.15]{Noto Serif CJK SC}\setCJKmonofont{Noto Sans CJK SC}
+\renewcommand{\abstractname}{摘要}
+\renewcommand{\refname}{参考文献}
+\renewcommand{\tablename}{表}
+\newtheorem{theorem}{定理}\newtheorem{lemma}{引理}
+\renewcommand{\proofname}{证明}
+\title{十九顶点路径图的均匀平均混合\\\large 显式整数时间证书与相位环面证明}
+\author{}
+\date{2026 年 11 月 27 日 \\ \small AI 辅助研究稿，尚未经同行评议}
+\begin{document}\maketitle
+\begin{abstract}
+本文研究路径图 $P_{19}$ 上连续时间邻接量子行走的均匀平均混合问题。对应模数 $q=20$ 不在 Kang（arXiv:2609.14463v1）已证明的存在性与不存在性定理范围内。本文给出 91 个小于 2000 的互异非负整数读出时刻，并以一个非奇异实线性方程组定义精确概率权重。通过严格向外舍入的整数区间证书，证明近似逆矩阵缺陷小于 $2\times10^{-10}$，且全部精确权重严格大于 $6\times10^{-4}$。另一条证明路线利用受约束的四次单位根相位分布与凸集相对内部定理，将相位环面上的构造严格转移到实际时间。随文程序以精确算术核查全部 171 个能级对及 361 个混合矩阵恒等式。目前仅能隙分组的有限代数命题已获得 Lean 4 检查结果，完整定理尚未完成形式化验证，也未经独立同行评议。
+\end{abstract}
+\noindent\textbf{关键词：} 连续时间量子行走；路径图；随机读出；圆分域；区间证书。
+\section{引言与主要结论}
+设 $A$ 为路径图 $P_N$ 的实邻接矩阵，当 $|k-l|=1$ 时 $A_{kl}=1$，其他元素为零。取跃迁耦合常数及 $\hbar$ 为 1，令 $U(t)=\exp(itA)$，混合矩阵 $M(t)_{kl}=|U(t)_{kl}|^2$。若存在时间概率分布 $\mu$，使 $\int M(t)\,d\mu(t)=J_N/N$（$J_N$ 为全 1 矩阵），则称其实现均匀平均混合。这与瞬时均匀混合及无限时间 Cesàro 平均不同\cite{baptista,godsil}。
+
+Kang\cite{kang} 证明：当 $q=N+1$ 为素数、两倍素数或 2 的整数次幂时，均匀平均混合存在；当 $15\mid q$、$21\mid q$ 或 $6\mid q$ 且 $q\ge12$ 时不存在。$q=20$ 不属于上述两类。本文研究该具体情形，并给出显式协议。不主张已穷尽所有可能的在先成果。
+\begin{theorem}\label{thm:main}
+存在 91 个互异整数 $t_j$，满足 $0\le t_j<2000$，以及实权重 $w_j>0.0006$，使 $\sum_{j=1}^{91}w_j=1$，且
+\begin{equation}\label{eq:main}
+\sum_{j=1}^{91}w_j M(t_j)=\frac{J_{19}}{19}.
+\end{equation}
+读出时刻见表~\ref{tab:times}，精确权重由式~\eqref{eq:system} 定义。
+\end{theorem}
+第一条证明为计算机辅助证明，第 3、4 节有限算术检验由公开程序复现；第二条证明（第 5 节）独立证明存在至多 91 个实际时刻，不指定其数值，也不依赖三角函数区间计算。两条路线共享谱分解。
+\section{路径图谱分解与充分条件}
+令 $q=N+1$，路径图的特征值与归一化特征向量为
+\[
+\theta_r=2\cos(r\pi/q),\quad v_r(k)=\sqrt{2/q}\sin(kr\pi/q),\quad 1\le r,k\le q-1.
+\]
+由正弦加法公式及 $k=0,q$ 处的零边界条件得到 $Av_r=\theta_rv_r$。余弦在 $(0,\pi)$ 严格递减，故特征值互异；$A$ 的对称性保证特征向量正交。利用 $q$ 次单位根的有限几何级数可得 $\sum_{k=1}^{q-1}\sin^2(kr\pi/q)=q/2$，从而归一化成立。令 $E_r=v_rv_r^T$。展开 $U(t)=\sum_r e^{it\theta_r}E_r$ 的逐元素模平方，得到
+\begin{equation}\label{eq:mix}
+\widehat M=\sum_r E_r^{\circ2}+2\sum_{r<s}y_{rs} E_r\circ E_s,\quad
+ y_{rs}=\int\cos((\theta_r-\theta_s)t)\,d\mu(t).
+\end{equation}
+其中 $\circ$ 表示逐元素乘积。以下充分条件见文献\cite{kang}，本文给出直接推导。
+\begin{lemma}\label{lem:target}
+若对所有不同的同奇偶性指标有 $y_{rs}=-1/(q-1)$，对异奇偶性指标有 $y_{rs}=0$，则 $\widehat M=J_N/N$。
+\end{lemma}
+\begin{proof}
+对 $1\le k,l<q$，记 $D=\delta_{kl}$、$F=\delta_{k+l,q}$，并令 $C(m)=\sum_{r=1}^{q-1}\cos(2\pi mr/q)=q\mathbf1_{q\mid m}-1$。积化和差公式给出
+\begin{align*}
+\sum_r\sin^2(kr\pi/q)\sin^2(lr\pi/q)
+&=\tfrac14[C(0)-C(k)-C(l)+\tfrac12(C(k-l)+C(k+l))]\\
+&=q/4+q(D+F)/8.
+\end{align*}
+故 $\sum_r E_r(k,l)^2=1/q+(D+F)/(2q)$，与文献\cite{godsil}的路径图平均矩阵公式一致。令反射矩阵 $H_{kl}=F$，有 $Hv_r=(-1)^{r+1}v_r$，故奇数、偶数谱投影之和分别为 $(I+H)/2$ 与 $(I-H)/2$，两者的 $(k,l)$ 元素平方之和为 $(D+F)/2$。将目标相干系数代入式~\eqref{eq:mix}，得
+\[
+\widehat M_{kl}=\frac{q\sum_r E_r(k,l)^2-\big(\sum_{r\,\mathrm{odd}}E_r(k,l)\big)^2-\big(\sum_{r\,\mathrm{even}}E_r(k,l)\big)^2}{q-1}=\frac1{q-1}.\qedhere
+\]
+\end{proof}
+\section{精确能隙分组与整数时间协议}
+取 $q=20$、$\zeta=e^{i\pi/20}$，并令 $p(X)=X^{16}-X^{12}+X^8-X^4+1=\Phi_{40}(X)$。由 $(X^4+1)p(X)=X^{20}+1$、$\zeta^{20}=-1$ 及 $\zeta^4\ne-1$ 可知 $p(\zeta)=0$。将 $X^r+X^{(-r)\bmod40}$ 对 $p$ 取余，得到次数小于 16 的整数多项式 $T_r$，满足 $T_r(\zeta)=\theta_r$。
+
+遍历 $1\le r<s\le19$ 的全部 171 个能级对，按 $T_r-T_s$ 的 16 个系数分组，每组取字典序第一个能级对为代表。程序 \texttt{verify\_certificate.py} 的精确枚举得到 90 组，且各组内目标相干系数一致（$-1/19$ 或 0）。由圆分多项式不可约性，90 个代表对应不同实能隙；第一条证明只需组内相等性。
+
+令 $(r_i,s_i)$ 为第 $i$ 组代表，$i=1,\ldots,90$。定义 $91\times91$ 实矩阵 $B$，第零行全为 1，其余元素及目标向量为
+\begin{equation}\label{eq:system}
+B_{ij}=\cos[(\theta_{r_i}-\theta_{s_i})t_j],\quad b_0=1,\quad b_i=-\tfrac1{19}\mathbf1_{r_i\equiv s_i\ (2)},\qquad w=B^{-1}b.
+\end{equation}
+这里 $i\ge1$，$j=1,\ldots,91$。依据引理~\ref{lem:target}，只需严格证明 $B$ 可逆以及 $w$ 严格为正。读出时刻固定为表~\ref{tab:times} 中的数值。
+\begin{table}[htbp]\centering\small
+\caption{按升序排列的显式整数读出时刻（无量纲）。}\label{tab:times}
+\begin{tabular}{rrrrrrr}\toprule
+14 & 74 & 85 & 133 & 139 & 141 & 197 \\
+218 & 255 & 267 & 282 & 316 & 350 & 366 \\
+383 & 387 & 395 & 456 & 463 & 464 & 467 \\
+470 & 493 & 503 & 531 & 553 & 589 & 591 \\
+615 & 622 & 624 & 639 & 665 & 723 & 724 \\
+766 & 794 & 802 & 842 & 846 & 950 & 977 \\
+1011 & 1020 & 1054 & 1073 & 1116 & 1126 & 1133 \\
+1156 & 1161 & 1174 & 1183 & 1253 & 1269 & 1283 \\
+1341 & 1380 & 1387 & 1399 & 1448 & 1452 & 1458 \\
+1470 & 1481 & 1497 & 1529 & 1554 & 1578 & 1580 \\
+1619 & 1673 & 1680 & 1681 & 1709 & 1716 & 1727 \\
+1750 & 1753 & 1783 & 1798 & 1825 & 1862 & 1888 \\
+1896 & 1914 & 1915 & 1974 & 1975 & 1984 & 1994 \\
+\bottomrule\end{tabular}\end{table}
+
+探索阶段在 $0,\ldots,1999$ 的候选时刻上通过浮点线性规划搜索可行解，但证明不依赖求解器的正确性。证书文件 \texttt{certificate.json} 存储 91 个时刻、近似逆矩阵 $R$ 及近似权重 $w^{(0)}$ 的整数分子，后两者分母均为 $10^{12}$。CSV 中的权重是近似值，精确权重为式~\eqref{eq:system} 定义的实数。
+\section{严格区间证书与定理~\ref{thm:main} 的证明}
+\subsection{向外舍入的整数区间运算}
+采用 $[a/S,b/S]$ 表示闭区间，$a,b\in\Z$，$S=10^{30}$。加法和取负为精确运算；乘法对四种端点乘积取最小值、最大值，除以 $S$ 后对下端点向下取整、上端点向上取整。正整数除法同理。这些运算均保持包含性。点积计算先以整数系数求和，再除以公分母，整个验证过程不使用浮点数。
+
+第一种三角函数区间算法采用 Machin 公式 $\pi=16\arctan(1/5)-4\arctan(1/239)$。反正切交错级数的前 40 项给出 $\arctan(1/k)$ 下界，再加首个遗漏项 $1/(81k^{81})$ 给出上界。Machin 公式可由主值范围内的正切加法公式得到。计算余弦时，通过区间运算减去适当整数倍的 $2\pi$，并检验所得区间位于 $[-4,4]$。采用 60 阶 Taylor 多项式，由于第 61 阶系数为零，Taylor 定理给出余项上界 $4^{62}/62!<1/S$，故在计算所得区间两端分别扩张 $1/S$ 即可包含真实余弦值。由此得到全部能级及读出矩阵元素的严格区间。
+\subsection{矩阵可逆性与精确权重正性}
+矩阵无穷范数定义为最大绝对行和，向量无穷范数定义为最大绝对分量。精确区间计算给出如下有理数上界：
+\begin{align}
+\norm{I-RB}&\le\delta=\frac{87689342669405671129}{500000000000000000000000000000}<2\times10^{-10},\label{eq:defect}\\
+\norm{R(b-Bw^{(0)})}&\le c=\frac{49781163298208067}{100000000000000000000000000000},\\
+\min_j w_j^{(0)}&=\frac{60053007}{100000000000}.
+\end{align}
+若 $Bv=0$，则 $v=(I-RB)v$，于是 $\norm v\le\delta\norm v$。因 $\delta<1$，必有 $v=0$，所以方阵 $B$ 可逆。精确解 $w$ 满足
+\[
+w-w^{(0)}=(I-RB)(w-w^{(0)})+R(b-Bw^{(0)}),\quad
+\norm{w-w^{(0)}}\le\frac{c}{1-\delta}<5\times10^{-13}.
+\]
+因此全部 $w_j>0.0006$。第零行严格保证 $\sum_jw_j=1$，其余各行通过能隙分组给出全部目标相干系数。由引理~\ref{lem:target} 得式~\eqref{eq:main}，第一条证明完毕。误差界仅描述近似权重与精确权重之差，混合矩阵等式本身严格成立。
+\subsection{独立的紧凑证书及第二种区间算法}
+为了便于复核，另构造定点整数证书。令 $Q=10^8$，$\widetilde B=A_0/Q$，$\widetilde R=R_0/Q$，$u=u_0/Q$，$b=b^{\mathrm{int}}/19$。数组存储在 \texttt{compact.json}，其中 $A_0$ 并非路径图邻接矩阵。程序检验 $|B_{ij}-\widetilde B_{ij}|\le1/Q$ 及整数不等式
+\begin{align*}
+\max_i\sum_k|R_{0,ik}|&\le27Q,\\
+\max_i\sum_j|Q^2\delta_{ij}-\sum_kR_{0,ik}A_{0,kj}|&\le Q^2/10^4,\\
+\max_i|b_i^{\mathrm{int}}Q^2-19\sum_k A_{0,ik}u_{0,k}|&\le 19Q^2/10^6,\\
+\sum_j |u_{0,j}|&\le2Q,\quad\min_j u_{0,j}\ge60000.
+\end{align*}
+由范数次乘性得 $\norm{I-\widetilde R B}\le10^{-4}+27\cdot91/Q<10^{-3}$ 以及 $\norm{\widetilde R(b-Bu)}\le27(10^{-6}+2/Q)<1/30000$。同样的论证得到 $\norm{w-u}<1/20000$，从而 $w_j>11/20000$。这一较弱下界仍独立保证权重严格为正。
+
+第二种区间算法无需近似计算 $\pi$。由 $\cos(\pi/5)=(1+\sqrt5)/4$ 及两次取正半角公式，得到
+\[
+\theta_1=\sqrt{2+\sqrt{(5+\sqrt5)/2}},\quad \theta_0=2,\quad\theta_{r+1}=\theta_1\theta_r-\theta_{r-1}.
+\]
+借助整数平方根及向外舍入，严格包围嵌套根式和各能级。对 $y=(\theta_r-\theta_s)t_j$，令 $x=y/4096$，程序检验 $|x|\le2$；40 阶余弦 Taylor 多项式的余项不超过 $2^{42}/42!<1/S$。随后执行 12 次倍角映射 $c\mapsto2c^2-1$，每次与 $[-1,1]$ 取交集，得到 $\cos y$ 的区间。两种区间算法均验证通过全部 8281 个紧凑矩阵元素；根式方法所得最大逐元素偏差上界小于 $5\times10^{-9}$。
+\section{第二条证明：受约束的离散相位分布}
+本证明独立于整数读出时刻的选取，采用圆分多项式不可约性、Kronecker 逼近定理\cite{hardy}及有限维凸分析\cite{rock}。
+\subsection{相位流闭包}
+九个正能级 $\theta_1,\ldots,\theta_9$ 的有理线性关系空间为一维，生成关系为
+\begin{equation}\label{eq:rel}
+\theta_1-\theta_3-\theta_5+\theta_7+\theta_9=0.
+\end{equation}
+以 $T_r$ 的 16 个系数为列构造矩阵（$1\le r\le9$），其零空间包含向量 $(1,0,-1,0,-1,0,1,0,1)^T$。选取行 $0,1,2,5,6,7,8,9$（从 0 编号）和列 $1,\ldots,8$（从 1 编号），所得子式为
+\[
+L=\begin{pmatrix}
+0&0&0&1&0&0&0&0\\1&0&1&0&0&0&0&0\\0&2&0&0&0&0&0&0\\0&0&-1&0&1&0&0&0\\0&-1&0&0&0&1&0&0\\-1&0&0&0&0&0&1&0\\0&0&0&1&0&0&0&1\\0&0&1&0&0&0&0&0
+\end{pmatrix},\qquad \det L=-2.
+\]
+因 $p$ 为 $\zeta$ 的最小多项式，故有理秩恰为 8，上述本原整数向量生成全部整数关系。由 Kronecker 定理，$(\R/2\pi\Z)^9$ 中相位流 $t\mapsto(t\theta_1,\ldots,t\theta_9)$ 的闭包是子环面 $H$，由 $\varphi_1-\varphi_3-\varphi_5+\varphi_7+\varphi_9=0\pmod{2\pi}$ 定义。将相位延拓至全部 19 个模式：$\varphi_{10}=0$，$\varphi_{20-r}=-\varphi_r$。
+\subsection{有限相位概率分布}
+下表给出以 $\pi/2$ 为单位的相位模式及概率。对每组独立抽取模式，均匀随机排列所有坐标，再以 $1/2$ 概率整体取负。五坐标组用于 $(\varphi_1,-\varphi_3,-\varphi_5,\varphi_7,\varphi_9)$，四坐标组用于 $(\varphi_2,\varphi_4,\varphi_6,\varphi_8)$。
+\begin{center}\begin{tabular}{@{}lr@{\qquad}lr@{}}\toprule
+\multicolumn{2}{c}{\(m=5\)}&\multicolumn{2}{c}{\(m=4\)}\\\midrule
+$(0,0,0,0,0)$&$1/96$&$(0,0,1,3)$&$1/6$\\
+$(0,0,0,2,2)$&$25/96$&$(0,2,2,3)$&$1/2$\\
+$(0,0,2,3,3)$&$5/36$&$(2,3,3,3)$&$1/18$\\
+$(0,1,1,3,3)$&$5/72$&$(1,3,3,3)$&$5/18$\\
+$(1,2,3,3,3)$&$25/48$&&\\\bottomrule
+\end{tabular}\end{center}
+每组权重和为 1，五坐标组每种模式的坐标和均为 0 模 4，故构造的分布 $\nu$ 支撑于 $H$。对长度为 $m$ 的模式令 $c_j=\cos(a_j\pi/2)$、$s_j=\sin(a_j\pi/2)$、$C=\sum c_j$、$S_1=\sum s_j$、$C_2=\sum c_j^2$、$S_2=\sum s_j^2$。均匀排列使单坐标余弦与倍角余弦的期望分别为 $C/m$、$(C_2-S_2)/m$；异坐标余弦乘积及正弦乘积的期望分别为 $(C^2-C_2)/(m(m-1))$ 和 $(S_1^2-S_2)/(m(m-1))$。整体取负使正弦期望及正余弦混合乘积期望为零。代入表中权重，得到
+\begin{center}\begin{tabular}{lcc}\toprule
+相位矩 & 五坐标组 & 四坐标组\\\midrule
+$\mathbb E\cos\varphi_i$ & $0$ & $-1/18$\\
+$\mathbb E\cos 2\varphi_i$ & $-1/18$ & $-1/18$\\
+$\mathbb E\cos\varphi_i\cos\varphi_j$（$i\ne j$）&$-1/18$&$-1/18$\\
+$\mathbb E\sin\varphi_i\sin\varphi_j$（$i\ne j$）&$0$&$0$\\\bottomrule
+\end{tabular}\end{center}
+指定奇数坐标的符号变换不改变上述结果。两组独立性给出跨奇偶性指标的零相干系数。零能级及反射能级对分别使用单角和倍角期望。因此全部 171 个能级对满足
+\[
+\mathbb E_\nu\cos(\varphi_r-\varphi_s)=-\tfrac1{18}\mathbf1_{r\equiv s\ (2)}.
+\]
+有理数枚举验证五坐标组及四坐标组的支撑大小分别为 141、52，联合分布包含 7332 个相位状态；81 个能级对的期望为 $-1/18$，其余 90 个为零。
+\subsection{从相位环面到实际读出时间}
+定义 $F:H\to\R^{171}$，$F(\varphi)_{rs}=\cos(\varphi_r-\varphi_s)$，令 $K=\conv F(H)$。由于 $H$ 紧且 $F$ 连续，有限维凸包 $K$ 紧。每个差相位特征标在 $H$ 上均非平凡：沿实际相位流的频率为非零的 $\theta_r-\theta_s$。因此由特征标正交性，$H$ 上归一化 Haar 测度 $h$ 满足 $\int F\,dh=0$。其满支撑性质进一步推出 $0\in\ri K$：若零点位于相对边界，则存在在 $K$ 上非常数的支撑仿射泛函在该均值处取最大值，由连续性及满支撑性，该泛函必须在整个 $F(H)$ 上恒为最大值，矛盾。
+
+取 $\rho=(18\nu+h)/19$，恰得到目标相干向量 $y$。由凸集内一点与相对内点的严格凸组合仍为相对内点，知 $y\in\ri K$。设 $D=\{F(t\theta):t\in\R\}$，相位流稠密性给出 $\overline{\conv D}=K$，而有限维凸集与其闭包具有相同的相对内部\cite{rock}。故 $y\in\conv D$，而非仅属于其闭包。这一步是存在实际读出时刻的关键，不能直接把辅助离散相位当成真实时刻。因 90 组能隙内各坐标相同，$D$ 的仿射维数至多为 90。由 Carathéodory 定理，至多 91 个真实时刻的凸组合即可实现 $y$。又因 $M(-t)=M(t)$，负时刻可替换为绝对值。最后由引理~\ref{lem:target} 完成存在性证明。第二条证明不主张表~\ref{tab:times} 中的整数时刻直接来自离散相位分布。
+\section{复现、局限性与声明}
+论文整理时重新运行了五个验证程序，实际输出见 \path{verification/reproduction.log}。两套多项式计算还在 $\Z[X]/(p)$ 中逐项核验了 \[20\sum F_r^2-\Big(\sum_{r\,\mathrm{odd}} F_r\Big)^2-\Big(\sum_{r\,\mathrm{even}} F_r\Big)^2=1600.\]，其中 $F_r=T_{r(k-l)}-T_{r(k+l)}$，在 $\zeta$ 处取值等于 $40E_r(k,l)$。由此独立检查 361 个混合矩阵目标元素。上述严格证书不以浮点求解器的输出或数值容差为证明依据。
+
+Lean 4 的有限能隙命题 \texttt{P19.allGapChecks} 已在官方网页编辑器（v4.37.0-rc1）获得检查输出，其依赖为常规公理 \texttt{propext}、\texttt{Classical.choice}、\texttt{Quot.sound}。大型整数矩阵证书尚无成功完成的编译记录；解析桥接模块为未经编译的草稿。区间运算的可靠性、谱分解解释以及无条件主定理尚未完整衔接。因此本文属于精确算术支持的计算机辅助数学证明，不能称为已通过完整 Lean 形式化验证的成果。本文不主张支撑时刻数最少或最大读出时间最短。2026 年 11 月 27 日针对性公开检索暂未发现 $q=20$ 的在先解答，但未收录成果及并行研究仍可能存在，不能据此断言绝对首创。尚未经独立同行评议。
+
+\noindent\textbf{AI 使用声明：} ChatGPT 参与文献检索、证明构造、探索计算、证书生成、验证程序及论文写作。公开发布者须在发布前审阅全文，并对发布决定负责。本文不代表任何机构的认可。
+\begin{thebibliography}{9}
+\bibitem{baptista} P. Baptista, G. Coutinho and V. Marques, \emph{Unexpected Averages of Mixing Matrices}, arXiv:2308.16378 (2023). \url{https://arxiv.org/abs/2308.16378}.
+\bibitem{kang} M. Kang, \emph{Arithmetic of Bohr Frequencies Governs Uniform Mixing in Randomly Timed Quantum Spin Chains}, arXiv:2609.14463v1 (2026). \url{https://arxiv.org/abs/2609.14463v1}.
+\bibitem{godsil} C. Godsil, Average mixing of continuous quantum walks, \emph{J. Combin. Theory Ser. A} \textbf{120} (2013), 1649--1662. \href{https://doi.org/10.1016/j.jcta.2013.05.006}{doi:10.1016/j.jcta.2013.05.006}.
+\bibitem{hardy} G. H. Hardy and E. M. Wright, \emph{An Introduction to the Theory of Numbers}, 6th ed., Oxford University Press (2008), Ch. XXIII.
+\bibitem{rock} R. T. Rockafellar, \emph{Convex Analysis}, Princeton University Press (1970), Thm. 6.3 and 11.6.
+\end{thebibliography}
+\end{document}

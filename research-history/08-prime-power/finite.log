@@ -1,0 +1,3 @@
+PASS: 246 finite instances (36 odd, 210 even); maximum N=9999.
+All relation block coefficients, pair-probability tables and target moments checked exactly.
+Scope: finite checks; general proof and symbolic inequalities in companion files.

@@ -1,0 +1,9 @@
+PASS: original A, R, w, b, times match compact.json exactly.
+PASS: generated transpose matches all 8281 entries of A.
+PASS: all 91 exact row certificates and global checks.
+max l1 R row = 2694538587
+max integer defect = 18645613275
+max integer residual = 10594416146
+min integer weight = 60053
+Lean source SHA256: 64bc8c02469cebd3f9360e1fc97d243710d2a8f10ed25af7b2396b089ccd7658
+Lean compiler not available; compilation and runtime not measured.

@@ -1,0 +1,13 @@
+Python 3.13.5, SymPy 1.14.0, Linux-6.18.57-x86_64-with-glibc2.41
+verify_short_relations.py: exit=0, elapsed=1.67s
+verify_three_blocks.py: exit=0, elapsed=1.61s
+verify_classification.py: exit=0, elapsed=1.08s
+verify_low_degree.py: exit=0, elapsed=1.49s
+verify_all.py: exit=0, elapsed=1.97s
+verify_small_density.py: exit=0, elapsed=4.46s
+verify_lattice.py: exit=0, elapsed=3.24s
+verify_q33_density.py: exit=0, elapsed=1.03s
+verify_localization.py: exit=0, elapsed=4.03s
+verify_uniform_floor.py: exit=0, elapsed=1.23s
+verify_release_consistency.py: exit=0, elapsed=0.91s
+11/11 executed checks passed (full arithmetic suite)

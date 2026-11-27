@@ -1,0 +1,8 @@
+PASS: radical recurrence, 19 energy intervals; no pi bounds
+PASS: all 8281 entries enclosed, same original A/Q approximation
+max interval width = 11698114893/100000000000000000000000000000
+max entrywise error <= 2499622479274106427527/500000000000000000000000000000
+PASS: all original integer matrix inequalities
+PASS: Taylor remainder bound 2^42/42! < 10^-30
+PASS: exact rational positivity bound: 11/20000
+Analytic lemmas and full Lean proof not yet compiled.

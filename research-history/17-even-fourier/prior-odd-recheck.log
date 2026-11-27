@@ -1,0 +1,41 @@
+Z = (335016*b**4 + 414504*b**3 + 122490*b**2 + 126705*b + 2209)/(3*b + 1)**4 PASS
+U = -8*(8154*b**3 + 9171*b**2 + 21603*b - 14243)/(3*b + 1)**4 PASS
+V = -24*(2718*b**3 + 1857*b**2 + 11035*b - 21989)/(3*b + 1)**4 PASS
+W = -8*(8154*b**3 + 9171*b**2 + 21015*b - 13655)/(3*b + 1)**4 PASS
+V-U shift b=4+x positive numerator: 28800*x**2 + 138384*x + 506528
+V-W shift b=4+x positive numerator: 28800*x**2 + 133680*x + 492416
+G-E shift b=4+x positive numerator: 56376*x**4 + 539784*x**3 + 3753414*x**2 + 10792767*x + 2172683
+G-E-extra shift b=16+x positive numerator: 56376*x**4 + 3245832*x**3 + 71894502*x**2 + 648979023*x + 1550708831
+margin at b=16: 4521017/16807
+central conductor 33 parameter vectors 1024 counts {(10, 2, 1, 'simple'): 5, (10, 2, 0, 'double'): 5, (8, 2, 0, 'simple'): 10} PASS
+central conductor 39 parameter vectors 4096 counts {(10, -2, 1, 'simple'): 1, (8, -2, 0, 'simple'): 6} PASS
+central conductor 51 parameter vectors 65536 counts {} PASS
+central conductor 57 parameter vectors 262144 counts {} PASS
+q= 33 exact ordinary correction 862785/2048 positivity margin -643381/4096
+q= 39 exact ordinary correction 34231680/130321 positivity margin 9760481/130321
+q=9 explicit law: rho= 5/21 lambda= 3/5 PASS
+ALL EXACT ASSERTIONS PASSED
+NEGATIVE CONTROL q=12: exact equal gaps (1,5) and (3,6), opposite parity
+NEGATIVE CONTROL q=15: exact equal gaps (1,4) and (3,5), opposite parity
+NEGATIVE CONTROL q=21: exact equal gaps (3,7) and (6,9), opposite parity
+NEGATIVE CONTROL q=30: exact equal gaps (4,14) and (6,15), opposite parity
+PASS q=33, P_32: 496 full pairs; 32 seed orbits; G=20; exact
+PASS q=39, P_38: 703 full pairs; 38 seed orbits; G=24; exact
+central 35 parameter vectors checked: 36365
+central 35 nonzero arrays of length <=10: 72
+central 35 relevant arrays: 20 PASS
+mixed central support 55 [(4, 8, 20), (4, 10, 14)] PASS
+mixed central support 65 [(4, 12, 16)] PASS
+mixed central support 85 [(4, 16, 20)] PASS
+mixed central support 77 [(6, 10, 16)] PASS
+mixed central support 91 [(6, 12, 18)] PASS
+385 central slice: 243 integer arrays checked; no feasible norm 5: PASS
+direct cyclotomic checks: 31 relations PASS
+moment formula, density slack >=696: PASS
+q=35: all 289 moments, E= 31239432/83521 G= 5397327/4913 PASS
+pure q>=25 : E <= 392 PASS
+q>=55 and 35 not dividing q : E <= 3132416/19683 PASS
+35 divides q, q>=175 : E <= 17153920/707281 PASS
+q=35 exact : E <= 31239432/83521 PASS
+strict density floor and grid constants: PASS
+ALL EXACT CHECKS PASSED

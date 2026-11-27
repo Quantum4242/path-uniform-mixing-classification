@@ -1,0 +1,10 @@
+# H. Fourier classification, audit trail and Lean status
+
+The final candidate classification is UAM on P_(q−1), q≥3, iff 15∤q, 21∤q and (6∤q or q=6). The necessity, forced target moments and three known positive families belong to Kang. The proposed general sufficiency uses nonnegative Fourier densities, an inventory of short signed relations, and correction bounds. The original evolution is preserved in stages 14–17; the final main paper and its detailed proof remain unchanged from v0.1.0.
+
+- [Early Fourier method](../research-history/14-fourier/research-note.md), [odd q coprime to 3](../research-history/15-odd-coprime/research-note.md), [odd q divisible by 3](../research-history/16-three-block/research-note.md), [even q](../research-history/17-even-fourier/research-note.md).
+- [First audit](../research-history/18-audit/audit-report.md), [revised proof/audit](../research-history/19-revised-audit/audit-addendum.md), [third audit](../research-history/20-third-audit/audit-addendum.md).
+- [Post-release audit](../research-history/21-postrelease-audit/README.md): 52,230,728 free integer vectors, 3,260 raw nonzero short relations across the tested odd/even groups. Odd tests compare types/counts, even tests compare full vector sets. This does not prove global completeness.
+- [Lean stage 1](../lean/stage1/README.md): local 35/385 integer structure and general positivity. 17 principal source theorems, source-level checks passed; no Lean compilation in this environment. Do not cite these as kernel-verified. Historical P19 gap and matrix finite certificate evidence is recorded separately in [Lean history](../lean/README.md).
+
+The local short-relation inventory is the most important open audit risk. See [review map](../docs/REVIEW.md) and the original proof. All previous logs preserve their original scope and date; they are not independent human peer review. A successful CI job certifies script execution only. See [current reproducibility results](../records/v0.2.0-rc1-rerun/).

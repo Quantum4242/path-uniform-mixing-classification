@@ -1,0 +1,26 @@
+moment 0 = 1
+moment 1 = 1
+moment 2 = (2*m - 1)/m
+moment 3 = (6*m**2 - 9*m + 4)/m**2
+moment 4 = (24*m**3 - 72*m**2 + 82*m - 33)/m**3
+moment 5 = (120*m**4 - 600*m**3 + 1250*m**2 - 1225*m + 456)/m**4
+Z = (4136*m**3 - 968*m**2 + 658*m - 1617)/m**3 
+Y = (1720*m**4 - 1920*m**3 + 12370*m**2 - 32305*m + 22344)/m**4
+gap numerator identity and positivity: PASS
+independent Laurent multiplication: m = 2 PASS
+independent Laurent multiplication: m = 3 PASS
+independent Laurent multiplication: m = 4 PASS
+independent Laurent multiplication: m = 5 PASS
+symmetric mixed block 77 nonzero axis counts [(6, 10, 16)] PASS
+symmetric mixed block 91 nonzero axis counts [(6, 12, 18)] PASS
+axis relation q = 77 norm = 8 charge = 2 PASS
+axis relation q = 91 norm = 9 charge = 3 PASS
+axis relation q = 539 norm = 8 charge = 2 PASS
+axis relation q = 1001 norm = 8 charge = 2 PASS
+77-axis correction q = 77 affected moments = 180 sum abs error = 387450/130321 density lower bound = 919151055/5211297808 PASS
+77-axis correction q = 539 affected moments = 1335 sum abs error = 43454880/5236114321 density lower bound = 3792965139531/25430825834000 PASS
+77-axis correction q = 1001 affected moments = 2490 sum abs error = 504441/390625000 density lower bound = 2222926261569/15141892517200 PASS
+B = 1616615 C = 100464 C0 = 22115654674705158349930105755211155783396334886859908348424030000000000
+m threshold = 4443654262479158056934756289183067109246258776146987664632143499840000000000
+ALL EXACT CHECKS PASSED
+uniform density floor 1/50 and finite-grid constants: PASS

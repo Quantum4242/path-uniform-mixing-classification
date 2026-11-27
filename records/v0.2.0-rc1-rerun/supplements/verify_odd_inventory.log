@@ -1,0 +1,21 @@
+25 None dimension 2 221 free vectors; 12 nonzero short relations
+  relevant inventory matches: {(10, 0, (1, 1, 1, 1, 1, 1, 1, 1, 1, 1)): 2}
+35 None dimension 5 36365 free vectors; 72 nonzero short relations
+  relevant inventory matches: {(10, 0, (1, 1, 1, 1, 1, 1, 1, 1, 1, 1)): 6, (8, 2, (1, 1, 1, 1, 1, 1, 1, 1)): 12, (10, 2, (2, 2, 2, 2, 2)): 2}
+55 None dimension 7 433905 free vectors; 72 nonzero short relations
+  relevant inventory matches: {(10, 0, (1, 1, 1, 1, 1, 1, 1, 1, 1, 1)): 20, (10, 2, (1, 1, 1, 1, 1, 1, 1, 1, 1, 1)): 10}
+65 None dimension 8 1256465 free vectors; 86 nonzero short relations
+  relevant inventory matches: {(10, 0, (1, 1, 1, 1, 1, 1, 1, 1, 1, 1)): 30}
+77 None dimension 8 1256465 free vectors; 12 nonzero short relations
+  relevant inventory matches: {(8, 2, (1, 1, 1, 1, 1, 1, 1, 1)): 2}
+85 None dimension 10 8097453 free vectors; 146 nonzero short relations
+  relevant inventory matches: {(10, 0, (1, 1, 1, 1, 1, 1, 1, 1, 1, 1)): 56}
+91 None dimension 9 3317445 free vectors; 14 nonzero short relations
+  relevant inventory matches: {}
+39 None dimension 7 433905 free vectors; 472 nonzero short relations
+  extra inventory matches: {(8, 2, (1, 1, 1, 1, 1, 1, 1, 1)): 12} three-block model relations: 30
+51 None dimension 9 3317445 free vectors; 850 nonzero short relations
+  extra inventory matches: {} three-block model relations: 56
+57 None dimension 10 8097453 free vectors; 1160 nonzero short relations
+  extra inventory matches: {} three-block model relations: 72
+ALL TEN ODD MODULI: exact inventory counts PASS

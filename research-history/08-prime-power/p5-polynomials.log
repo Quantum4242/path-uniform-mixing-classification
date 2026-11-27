@@ -1,0 +1,49 @@
+even_even False
+D_same_nonneg g>= 2 True deg 2 2 min 45 120 val 0.38699690402476783
+D_same_margin g>= 2 True deg 2 2 min 180 1440 val 0.09107327141382869
+Y_nonneg g>= 2 True deg -oo 0 min 0 1 val 0.0
+Y_mass g>= 2 True deg 2 2 min 270 720 val 0.4308565531475748
+cross_cc_margin g>= 2 True deg 3 3 min 270 3240 val 0.07691484809584938
+cross_cf_margin g>= 2 True deg 3 3 min 540 3240 val 0.1571459135643988
+free_same_margin g>= 2 True deg 2 2 min 198 720 val 0.2502579979360165
+even_even True
+D_same_nonneg g>= 2 True deg 4 4 min 324000 864000 val 0.4025658523848178
+D_same_margin g>= 2 True deg 4 4 min 54000 432000 val 0.03164467393097166
+Y_nonneg g>= 2 True deg 3 4 min 40500 2592000 val 0.009005842970156287
+Y_mass g>= 2 True deg 3 3 min 16200 43200 val 0.43741965853746856
+cross_cc_margin g>= 4 True deg 4 4 min 8100 97200 val 0.049053789974494416
+cross_cf_margin g>= 2 True deg 4 4 min 16200 97200 val 0.10637982418605349
+free_same_margin g>= 2 True deg 3 3 min 5940 21600 val 0.21096989118823892
+even_odd False
+D_same_nonneg g>= 5 True deg 2 2 min 15 40 val 0.4027926960257787
+D_same_margin g>= 5 True deg 2 2 min 60 480 val 0.08870390261367705
+Y_nonneg g>= 5 True deg -oo 0 min 0 1 val 0.0
+Y_mass g>= 5 True deg 2 2 min 90 240 val 0.4197994987468672
+cross_cc_margin g>= 5 True deg 2 2 min 90 1080 val 0.04655117861097927
+cross_cf_margin g>= 5 True deg 2 2 min 180 1080 val 0.13554026261667457
+free_same_margin g>= 5 True deg 2 2 min 66 240 val 0.2515216612960974
+even_odd True
+D_same_nonneg g>= 5 True deg 4 4 min 324000 864000 val 0.40943269117002123
+D_same_margin g>= 5 True deg 4 4 min 54000 432000 val 0.06505710474834613
+Y_nonneg g>= 5 True deg 3 4 min 4500 288000 val 0.0035041185236336274
+Y_mass g>= 5 True deg 3 3 min 5400 14400 val 0.42293537536747605
+cross_cc_margin g>= 5 True deg 3 3 min 2700 32400 val 0.025293347840639184
+cross_cf_margin g>= 5 True deg 3 3 min 5400 32400 val 0.11513263745618482
+free_same_margin g>= 5 True deg 3 3 min 1980 7200 val 0.23590925808203697
+odd False
+D_same_nonneg g>= 2 True deg 2 2 min 45 120 val 0.4083333333333333
+D_same_margin g>= 2 True deg 2 2 min 180 1440 val 0.07430555555555556
+Y_nonneg g>= 2 True deg -oo 0 min 0 1 val 0.0
+Y_mass g>= 2 True deg 2 2 min 270 720 val 0.44305555555555554
+cross_cc_margin g>= 2 True deg 3 3 min 270 3240 val 0.06426457194899818
+cross_cf_margin g>= 2 True deg 2 2 min 90 360 val 0.19907407407407407
+free_same_margin g>= 2 True deg 2 2 min 102 240 val 0.4110576923076923
+odd True
+D_same_nonneg g>= 2 True deg 4 4 min 972000 2592000 val 0.4216459471311839
+D_same_margin g>= 2 True deg 4 4 min 324000 2592000 val 0.026270719535482726
+Y_nonneg g>= 2 True deg 3 4 min 40500 2592000 val 0.007429126143529621
+Y_mass g>= 2 True deg 3 3 min 16200 43200 val 0.44893904320987654
+cross_cc_margin g>= 2 True deg 4 4 min 8100 97200 val 0.02203185083991095
+cross_cf_margin g>= 2 True deg 3 3 min 900 3600 val 0.1591676311728395
+free_same_margin g>= 2 True deg 3 3 min 1020 2400 val 0.3890224358974359
+PASS: all 42 shifted numerator/denominator coefficient checks.

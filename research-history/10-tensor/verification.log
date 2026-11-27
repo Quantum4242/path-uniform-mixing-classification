@@ -1,0 +1,30 @@
+PASS exact mask probabilities p=11
+PASS exact mask probabilities p=13
+PASS exact mask probabilities p=17
+PASS q=7: 4 exact tensor completions, active/reserve prescriptions and cyclotomic recurrence; last=(0, 2, 7)
+PASS q=49: 4 exact tensor completions, active/reserve prescriptions and cyclotomic recurrence; last=(3, 2, 49)
+PASS q=77: 4 exact tensor completions, active/reserve prescriptions and cyclotomic recurrence; last=(2, 2, 77)
+PASS q=539: 4 exact tensor completions, active/reserve prescriptions and cyclotomic recurrence; last=(17, 2, 539)
+PASS q=1001: 4 exact tensor completions, active/reserve prescriptions and cyclotomic recurrence; last=(17, 2, 1001)
+PASS q=14: 4 exact tensor completions, active/reserve prescriptions and cyclotomic recurrence; last=(0, 2, 28)
+PASS q=28: 4 exact tensor completions, active/reserve prescriptions and cyclotomic recurrence; last=(1, 2, 56)
+PASS q=98: 4 exact tensor completions, active/reserve prescriptions and cyclotomic recurrence; last=(6, 2, 196)
+PASS q=154: 4 exact tensor completions, active/reserve prescriptions and cyclotomic recurrence; last=(4, 2, 308)
+PASS q=308: 4 exact tensor completions, active/reserve prescriptions and cyclotomic recurrence; last=(9, 2, 616)
+PASS q=2002: 4 exact tensor completions, active/reserve prescriptions and cyclotomic recurrence; last=(34, 2, 4004)
+PASS universal even-q conservative bound at q=37, alpha>=5/6, beta>=2/3
+NOT COVERED sufficient criterion q=221, exact margin=-149/1540
+NOT COVERED sufficient criterion q=323, exact margin=-277/3864
+NOT COVERED sufficient criterion q=437, exact margin=-5/132
+PASS sufficient criterion q=667, exact margin=43/2886
+PASS sufficient criterion q=899, exact margin=34497/572026
+PASS sufficient criterion q=1147, exact margin=1825/19482
+PASS sufficient criterion q=47027, exact margin=273403/13402410
+PASS sufficient criterion q=107113, exact margin=7563351/81226600
+PASS sufficient criterion q=12780049, exact margin=452912017/5188699488
+PASS sufficient criterion q=2294, exact margin=6223369/57836339
+PASS sufficient criterion q=4588, exact margin=503835/4675682
+PASS sufficient criterion q=214226, exact margin=105596191011/966154750000
+PASS sufficient criterion q=3128518, exact margin=26908282970497511/131236616103325310
+PASS sufficient criterion q=56129, exact margin=427537/3199296
+PASS sufficient criterion q=224516, exact margin=316962688637/2330818996804

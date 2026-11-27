@@ -1,0 +1,122 @@
+Prior-work recheck (not independent theorem review)
+=== verify_finite.py ===
+PASS: 246 finite instances (36 odd, 210 even); maximum N=9999.
+All relation block coefficients, pair-probability tables and target moments checked exactly.
+Scope: finite checks; general proof and symbolic inequalities in companion files.
+=== verify_p5_polynomials.py ===
+even_even False
+D_same_nonneg g>= 2 True deg 2 2 min 45 120 val 0.38699690402476783
+D_same_margin g>= 2 True deg 2 2 min 180 1440 val 0.09107327141382869
+Y_nonneg g>= 2 True deg -oo 0 min 0 1 val 0.0
+Y_mass g>= 2 True deg 2 2 min 270 720 val 0.4308565531475748
+cross_cc_margin g>= 2 True deg 3 3 min 270 3240 val 0.07691484809584938
+cross_cf_margin g>= 2 True deg 3 3 min 540 3240 val 0.1571459135643988
+free_same_margin g>= 2 True deg 2 2 min 198 720 val 0.2502579979360165
+even_even True
+D_same_nonneg g>= 2 True deg 4 4 min 324000 864000 val 0.4025658523848178
+D_same_margin g>= 2 True deg 4 4 min 54000 432000 val 0.03164467393097166
+Y_nonneg g>= 2 True deg 3 4 min 40500 2592000 val 0.009005842970156287
+Y_mass g>= 2 True deg 3 3 min 16200 43200 val 0.43741965853746856
+cross_cc_margin g>= 4 True deg 4 4 min 8100 97200 val 0.049053789974494416
+cross_cf_margin g>= 2 True deg 4 4 min 16200 97200 val 0.10637982418605349
+free_same_margin g>= 2 True deg 3 3 min 5940 21600 val 0.21096989118823892
+even_odd False
+D_same_nonneg g>= 5 True deg 2 2 min 15 40 val 0.4027926960257787
+D_same_margin g>= 5 True deg 2 2 min 60 480 val 0.08870390261367705
+Y_nonneg g>= 5 True deg -oo 0 min 0 1 val 0.0
+Y_mass g>= 5 True deg 2 2 min 90 240 val 0.4197994987468672
+cross_cc_margin g>= 5 True deg 2 2 min 90 1080 val 0.04655117861097927
+cross_cf_margin g>= 5 True deg 2 2 min 180 1080 val 0.13554026261667457
+free_same_margin g>= 5 True deg 2 2 min 66 240 val 0.2515216612960974
+even_odd True
+D_same_nonneg g>= 5 True deg 4 4 min 324000 864000 val 0.40943269117002123
+D_same_margin g>= 5 True deg 4 4 min 54000 432000 val 0.06505710474834613
+Y_nonneg g>= 5 True deg 3 4 min 4500 288000 val 0.0035041185236336274
+Y_mass g>= 5 True deg 3 3 min 5400 14400 val 0.42293537536747605
+cross_cc_margin g>= 5 True deg 3 3 min 2700 32400 val 0.025293347840639184
+cross_cf_margin g>= 5 True deg 3 3 min 5400 32400 val 0.11513263745618482
+free_same_margin g>= 5 True deg 3 3 min 1980 7200 val 0.23590925808203697
+odd False
+D_same_nonneg g>= 2 True deg 2 2 min 45 120 val 0.4083333333333333
+D_same_margin g>= 2 True deg 2 2 min 180 1440 val 0.07430555555555556
+Y_nonneg g>= 2 True deg -oo 0 min 0 1 val 0.0
+Y_mass g>= 2 True deg 2 2 min 270 720 val 0.44305555555555554
+cross_cc_margin g>= 2 True deg 3 3 min 270 3240 val 0.06426457194899818
+cross_cf_margin g>= 2 True deg 2 2 min 90 360 val 0.19907407407407407
+free_same_margin g>= 2 True deg 2 2 min 102 240 val 0.4110576923076923
+odd True
+D_same_nonneg g>= 2 True deg 4 4 min 972000 2592000 val 0.4216459471311839
+D_same_margin g>= 2 True deg 4 4 min 324000 2592000 val 0.026270719535482726
+Y_nonneg g>= 2 True deg 3 4 min 40500 2592000 val 0.007429126143529621
+Y_mass g>= 2 True deg 3 3 min 16200 43200 val 0.44893904320987654
+cross_cc_margin g>= 2 True deg 4 4 min 8100 97200 val 0.02203185083991095
+cross_cf_margin g>= 2 True deg 3 3 min 900 3600 val 0.1591676311728395
+free_same_margin g>= 2 True deg 3 3 min 1020 2400 val 0.3890224358974359
+PASS: all 42 shifted numerator/denominator coefficient checks.
+=== verify_matching_enumeration.py ===
+PASS sizes=[3, 3] dummy=0 K=5: all edge rates match; degree sums 1.
+PASS sizes=[3, 3, 2] dummy=0 K=7: all edge rates match; degree sums 1.
+PASS sizes=[3, 3, 3, 3, 3] dummy=1 K=15: all edge rates match; degree sums 1.
+PASS: independent small matching schedule audit.
+=== verify_base_4p.py ===
+p=  5 N= 19 bound=   91: PASS
+p=  7 N= 27 bound=  183: PASS
+p= 11 N= 43 bound=  463: PASS
+p= 13 N= 51 bound=  651: PASS
+p= 17 N= 67 bound= 1123: PASS
+p= 19 N= 75 bound= 1407: PASS
+p= 23 N= 91 bound= 2071: PASS
+p= 29 N=115 bound= 3307: PASS
+p= 31 N=123 bound= 3783: PASS
+p= 37 N=147 bound= 5403: PASS
+p= 41 N=163 bound= 6643: PASS
+p= 43 N=171 bound= 7311: PASS
+p= 47 N=187 bound= 8743: PASS
+p= 53 N=211 bound=11131: PASS
+p= 59 N=235 bound=13807: PASS
+p= 61 N=243 bound=14763: PASS
+p= 67 N=267 bound=17823: PASS
+p= 71 N=283 bound=20023: PASS
+p= 73 N=291 bound=21171: PASS
+p= 79 N=315 bound=24807: PASS
+p= 83 N=331 bound=27391: PASS
+p= 89 N=355 bound=31507: PASS
+p= 97 N=387 bound=37443: PASS
+p=101 N=403 bound=40603: PASS
+PASS: all 24 odd primes from 5 through 101; exact rational moment and coefficient checks.
+Scope: finite checks only, not a Lean proof. General proof in research-note.md.
+=== verify_full.py ===
+NEGATIVE CONTROL q=12: exact equal gaps (1,5) and (3,6), opposite parity
+NEGATIVE CONTROL q=15: exact equal gaps (1,4) and (3,5), opposite parity
+NEGATIVE CONTROL q=21: exact equal gaps (3,7) and (6,9), opposite parity
+NEGATIVE CONTROL q=30: exact equal gaps (4,14) and (6,15), opposite parity
+PASS q=33, P_32: 496 full pairs; 32 seed orbits; G=20; exact
+PASS q=35, P_34: 561 full pairs; 32 seed orbits; G=24; exact
+PASS q=39, P_38: 703 full pairs; 38 seed orbits; G=24; exact
+PASS q=55, P_54: 1431 full pairs; 46 seed orbits; G=40; exact
+PASS q=65, P_64: 2016 full pairs; 55 seed orbits; G=48; exact
+PASS q=70, P_69: 2346 full pairs; 96 seed orbits; G=48; exact
+PASS q=77, P_76: 2850 full pairs; 58 seed orbits; G=60; exact
+PASS q=85, P_84: 3486 full pairs; 69 seed orbits; G=64; exact
+PASS q=91, P_90: 4005 full pairs; 68 seed orbits; G=72; exact
+PASS q=95, P_94: 4371 full pairs; 74 seed orbits; G=72; exact
+PASS q=110, P_109: 5886 full pairs; 138 seed orbits; G=80; exact
+PASS q=130, P_129: 8256 full pairs; 162 seed orbits; G=96; exact
+PASS q=140, P_139: 9591 full pairs; 232 seed orbits; G=96; exact
+PASS q=154, P_153: 11628 full pairs; 176 seed orbits; G=120; exact
+=== verify_tree.py ===
+PASS P=3 R=4: 144 ordered triple pairs, disjoint spanning trees and 4 exact pair rates
+PASS P=4 R=5: 1440 ordered triple pairs, disjoint spanning trees and 4 exact pair rates
+PASS P=5 R=6: 7200 ordered triple pairs, disjoint spanning trees and 4 exact pair rates
+PASS parallel             P>=6,R>=8   : numerator=2*x**2*y**2 + 24*x**2*y + 58*x**2 + 16*x*y**2 + 183*x*y + 389*x + 18*y**2 + 159*y + 21; denominator=x*y + 8*x + 6*y + 48
+PASS parallel             P=5,R>=18   : numerator=4*y**2 + 80*y + 90; denominator=5*y + 90
+PASS same_row             P>=6,R>=8   : numerator=8*x**2*y**3 + 152*x**2*y**2 + 928*x**2*y + 1828*x**2 + 76*x*y**3 + 1414*x*y**2 + 8390*x*y + 15878*x + 150*y**3 + 2655*y**2 + 14571*y + 24240; denominator=4*x*y**2 + 60*x*y + 224*x + 24*y**2 + 360*y + 1344
+PASS same_row             P=5,R>=18   : numerator=82*y**3 + 3853*y**2 + 59569*y + 302580; denominator=20*y**2 + 700*y + 6120
+PASS same_col             P>=6,R>=8   : numerator=8*x**3*y**2 + 108*x**3*y + 334*x**3 + 104*x**2*y**2 + 1374*x**2*y + 4087*x**2 + 416*x*y**2 + 5310*x*y + 14707*x + 516*y**2 + 6210*y + 14874; denominator=4*x**2*y + 32*x**2 + 44*x*y + 352*x + 120*y + 960
+PASS same_col             P=5,R>=18   : numerator=196*y**2 + 6086*y + 45180; denominator=80*y + 1440
+PASS different_cells      P>=6,R>=8   : numerator=4*x**3*y**3 + 76*x**3*y**2 + 464*x**3*y + 914*x**3 + 52*x**2*y**3 + 958*x**2*y**2 + 5600*x**2*y + 10367*x**2 + 208*x*y**3 + 3640*x*y**2 + 19619*x*y + 31694*x + 258*y**3 + 4131*y**2 + 18780*y + 19866; denominator=2*x**2*y**2 + 30*x**2*y + 112*x**2 + 22*x*y**2 + 330*x*y + 1232*x + 60*y**2 + 900*y + 3360
+PASS different_cells      P=5,R>=18   : numerator=98*y**3 + 4313*y**2 + 61157*y + 275895; denominator=40*y**2 + 1400*y + 12240
+PASS axis_interior_lower  P>=6,R>=8   : numerator=4*x**2*y**2 + 60*x**2*y + 218*x**2 + 32*x*y**2 + 456*x*y + 1537*x + 36*y**2 + 396*y + 699; denominator=2*x*y + 16*x + 12*y + 96
+PASS axis_interior_lower  P=5,R>=18   : numerator=8*y**2 + 160*y + 180; denominator=10*y + 180
+PASS axes_lower           P>=6,R>=8   : numerator=2*x**2*y + 20*x**2 + 16*x*y + 169*x + 18*y + 249; denominator=x + 6
+PASS axes_lower           P=5,R>=18   : numerator=4*y + 140; denominator=5

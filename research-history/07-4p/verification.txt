@@ -1,0 +1,26 @@
+p=  5 N= 19 bound=   91: PASS
+p=  7 N= 27 bound=  183: PASS
+p= 11 N= 43 bound=  463: PASS
+p= 13 N= 51 bound=  651: PASS
+p= 17 N= 67 bound= 1123: PASS
+p= 19 N= 75 bound= 1407: PASS
+p= 23 N= 91 bound= 2071: PASS
+p= 29 N=115 bound= 3307: PASS
+p= 31 N=123 bound= 3783: PASS
+p= 37 N=147 bound= 5403: PASS
+p= 41 N=163 bound= 6643: PASS
+p= 43 N=171 bound= 7311: PASS
+p= 47 N=187 bound= 8743: PASS
+p= 53 N=211 bound=11131: PASS
+p= 59 N=235 bound=13807: PASS
+p= 61 N=243 bound=14763: PASS
+p= 67 N=267 bound=17823: PASS
+p= 71 N=283 bound=20023: PASS
+p= 73 N=291 bound=21171: PASS
+p= 79 N=315 bound=24807: PASS
+p= 83 N=331 bound=27391: PASS
+p= 89 N=355 bound=31507: PASS
+p= 97 N=387 bound=37443: PASS
+p=101 N=403 bound=40603: PASS
+PASS: all 24 odd primes from 5 through 101; exact rational moment and coefficient checks.
+Scope: finite checks only, not a Lean proof. General proof in research-note.md.

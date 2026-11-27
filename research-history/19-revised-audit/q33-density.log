@@ -1,0 +1,6 @@
+33 None dimension 6 134245 free vectors; 352 nonzero short relations
+Z,U,V,W 16555999/4096 -1342297/8192 -1258083/8192 -1339945/8192
+G,A,B,Eextra 3573329/4096 42107/4096 40931/4096 862785/2048
+old separate L1 margin -643381/4096
+new square-completion margin 42831862673/172470272 approx 248.34345175149952
+All 256 target moments + normalization computed exactly, positivity PASS.

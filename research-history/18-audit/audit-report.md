@@ -1,0 +1,29 @@
+# Audit of candidate complete classification of uniform average mixing on paths
+27 November 2026. AI-assisted internal review, not independent peer review. No personal author assigned. No changes to public repositories.
+
+## Scope
+Reviewed the three notes in path-classification-research.zip: even-fourier-path/research-note.md, prior-odd/research-note.md, prior-odd/prior-odd-coprime/research-note.md. Rechecked Kang arXiv:2609.14463v1 (Theorem, forced coherences, S4) and Conway–Jones, Acta Arith. 30 (1976), pp.231,235 (rational coefficients, length, Theorems 1 and 5). No matching full classification found in targeted public searches; priority is not established conclusively.
+
+## Result
+No fatal contradiction found in this audit. The candidate theorem is UAM on P_(q−1) iff 15 and 21 do not divide q and either 6 does not divide q or q=6. Necessity is prior work. General positive direction uses three distinct constructions, not Lean-certified. Review does not establish correctness by independent human peer review.
+
+## Executed tests
+- All seven supplied scripts rerun successfully; `recheck.log`.
+- `independent_check.py`: independent cyclotomic reduction mod 4 via recurrence, explicit Galois action and bitset cosine counts; 15 certificates, 49,895 original mode pairs, exact. `independent.log`.
+- `independent_moments.py`: raw binomial convolution and Laurent expansion, 108 rational evaluations; proves 12 general moment identities by degree <=8 after denominator clearing and nine distinct integer arguments. `moments.log`.
+- `independent_arrays.py`: bounded exact enumeration of rows and columns using residual L1 weight; matches all 12 central two-prime array inventories (six conductors, symmetric and antisymmetric). `arrays.log`.
+
+## Required manuscript corrections and clarifications
+1. Three-block note §4, r=11, one d=+1 and four d=-1: explicitly mark the vector as a double-coefficient relation. Its spectrum has two +1, two +2 and four −1 entries, length 10, charge +2; five permutations. It is already counted in the final error inequality by the term 2*5*8*28224/m^4. The five double relations are not an extra uncounted case. Distinguish this row from the all-unit simple rows. The upper bound remains unchanged.
+2. Even note §4.1: explicitly set zeta=e^(pi i/q). The projection of a squarefree reduced conductor d' to Z/q has odd order d=d'/gcd(d',2); lifts of each coset are zeta^a times d-th roots, with signs absorbed into coefficients. Fixed points 0 and q/2 are absent; the central lift at 0 is symmetric, the central lift at q/2 is antisymmetric because zeta^(q/2)=i. This should be presented as a standalone lemma, with injectivity on the chosen support and all counting assumptions.
+3. The three-prime conductor 385 exclusion: a minimal block requires 19 entries and, by inversion and total weight <=20, precisely 20 entries of weight 1. Once sliced by order 11, the 11 evaluations must be equal and nonzero. At least two slices are singletons. In the symmetric case normalize the common real value to 1; nonsingleton slices contain at least four entries. The central slice has even support and no origin. The only support allocations are (4,4,4, eight singletons) or (10, ten singletons). The first lowers conductor to 55 by the minimal length-5 prime-cycle property; the second is excluded by the 243 bounded integer choices. In the antisymmetric case a common imaginary value cannot be a signed odd-order root. State why equality of the common value and the support bound imply these facts without assuming coefficients positive.
+4. The pure-cycle pairing, mixed conductor coset partition, and multiplicity bounds require a standalone, line-by-line proof in final article. The new central enumeration validates the local integer arrays but not the global reduction by itself. Distinguish support cardinality from sum of absolute coefficients throughout.
+5. State the general Fourier correction lemma explicitly. For mutually orthogonal target cosines h_v with zero Haar mean and squared norm 1/2, normalization and moment corrections are exact. Positivity follows from the L1 sum of correction coefficients, not just the nonnegative square polynomial. For odd coprime-to-3 case the uniform error bound is below 696. For even case the most conservative margin at n=35 is 14500000−122193103488/8575=2144396512/8575>0. For the three-block case q=33 the uniform density estimate fails, but its separate certificate passes.
+6. Keep the full-support convex hull argument (not just density). Algebraic sampling step ensures no new annihilating characters because pi is transcendental. Distinguish existence on a grid from explicit integer-time schedules or practical maximum waiting times.
+7. Final paper should include both odd proofs in the main logical chain and the thirteen finite even exceptions plus q=33; q=39 is independently checked but also has a density proof. No new assertion of Lean certification of the full classification.
+
+## Reproduce
+From this directory, `python independent_check.py /path/to/even-fourier-path`, `python independent_moments.py`, `python independent_arrays.py`. SymPy is used in independent_check.py only for cyclotomic polynomials. The other two use the standard library. The original verification package requires SymPy and NumPy. No original source was modified by this audit.
+
+## Outstanding limitations
+The global short-relation reduction has been reviewed analytically, but not certified in Lean; all finite checks and independent implementations still share the mathematical model. No exhaustive search over all q is claimed. The novelty search is bounded; contact original author and request external review before claiming a priority result. P19's previously observed Lean verification is limited to integer matrix and gap subtheorems, not the general classification.

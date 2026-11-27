@@ -1,0 +1,4 @@
+PASS sizes=[3, 3] dummy=0 K=5: all edge rates match; degree sums 1.
+PASS sizes=[3, 3, 2] dummy=0 K=7: all edge rates match; degree sums 1.
+PASS sizes=[3, 3, 3, 3, 3] dummy=1 K=15: all edge rates match; degree sums 1.
+PASS: independent small matching schedule audit.

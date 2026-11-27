@@ -1,0 +1,170 @@
+[
+  {
+    "stage": "02-p19-phase",
+    "source_archive": "P19-research.zip",
+    "sha256": "4a98d2f27fc7a19d43b5858e0eea5a11b23fbbd3cd0ad34c803ecdf304782672",
+    "file_count": 5,
+    "stripped_prefix": "P19-research",
+    "primary": "proof.md"
+  },
+  {
+    "stage": "03-p19-integer",
+    "source_archive": "P19-integer-time-v2.zip",
+    "sha256": "6025617bfac95c3a9d4cd3db5645a270292071f9994f2eaa57b309c6496fff18",
+    "file_count": 8,
+    "stripped_prefix": "P19-v2",
+    "primary": "proof.md"
+  },
+  {
+    "stage": "04-p19-compact-lean",
+    "source_archive": "P19-lean-certificate-v3.zip",
+    "sha256": "43f9b20609b559d4895248a490dd43e4bacd5b82e87df3ef3277f36a4f240916",
+    "file_count": 20,
+    "stripped_prefix": null,
+    "primary": "compact-proof.md"
+  },
+  {
+    "stage": "05-p19-analytic-bridge",
+    "source_archive": "P19-v5-analytic-bridge.zip",
+    "sha256": "0e880e3dec11be44c411f51fe772c97d2f0f82ecae16a7c6f330b6b5af2a8e3d",
+    "file_count": 6,
+    "stripped_prefix": "P19-v5",
+    "primary": "README.md"
+  },
+  {
+    "stage": "06-p19-public-release",
+    "source_archive": "P19-GitHub-release-no-author.zip",
+    "sha256": "950ec5a0d19686d64626a744227bea71c0c2f48b74562e3a0e2d6908f5428251",
+    "file_count": 26,
+    "stripped_prefix": "P19-uniform-mixing",
+    "primary": "README.md"
+  },
+  {
+    "stage": "07-4p",
+    "source_archive": "P4p-research.zip",
+    "sha256": "97bbe5ce6a4448d0a73b55707671f4a76dd56c7823b7837eeeecd2023fa067dc",
+    "file_count": 3,
+    "stripped_prefix": "P4p-research",
+    "primary": "research-note.md"
+  },
+  {
+    "stage": "08-prime-power",
+    "source_archive": "prime-power-path-research.zip",
+    "sha256": "cf030ab85871c1b8ffe5e0e77049470667767bf0abbf58c2420c514ec213d691",
+    "file_count": 11,
+    "stripped_prefix": "prime-power-path-research",
+    "primary": "research-note.md"
+  },
+  {
+    "stage": "09-overlap-trees",
+    "source_archive": "overlap-path-research.zip",
+    "sha256": "b4533755cf8ee7d74e91bdc570311667bc33829e79689ce7ff49a000a7b76e4f",
+    "file_count": 22,
+    "stripped_prefix": "overlap-path-research",
+    "primary": "research-note.md"
+  },
+  {
+    "stage": "10-tensor",
+    "source_archive": "tensor-path-research.zip",
+    "sha256": "15ff798f212ed0163c4fa17840cf252f8db3d41c22e28de7bccd25e21949cbbd",
+    "file_count": 40,
+    "stripped_prefix": "tensor-path-research",
+    "primary": "research-note.md"
+  },
+  {
+    "stage": "11-semiprime",
+    "source_archive": "semiprime-completion-research.zip",
+    "sha256": "084c6bfa031947bc40f9c0ddd8117c9d08e3c69273d8640b869c6406ac9e226c",
+    "file_count": 29,
+    "stripped_prefix": "semiprime-completion",
+    "primary": "research-note.md"
+  },
+  {
+    "stage": "12-triple",
+    "source_archive": "triple-path-research.zip",
+    "sha256": "72bbcbe4f2cc528cda683a12cbe774b6c0a398e2bcc4e516da9760a985a06cd2",
+    "file_count": 11,
+    "stripped_prefix": null,
+    "primary": "research-note.md"
+  },
+  {
+    "stage": "13-effective",
+    "source_archive": "effective-path-research.zip",
+    "sha256": "b4d895aa0bdb967132d6320a2283b2aa93e612b8e35a88a9159f2f73c2572627",
+    "file_count": 12,
+    "stripped_prefix": null,
+    "primary": "research-note.md"
+  },
+  {
+    "stage": "14-fourier",
+    "source_archive": "fourier-path-research.zip",
+    "sha256": "2ff6b4e26544f71df4f238ad525584fd801f0800cbfba35087d95e4d9b1921eb",
+    "file_count": 4,
+    "stripped_prefix": "fourier-path-research",
+    "primary": "research-note.md"
+  },
+  {
+    "stage": "15-odd-coprime",
+    "source_archive": "short-relation-path-research.zip",
+    "sha256": "c6332e4717d8b738405a6c04459c64ee70b07b435fb9d9836e6ff219c7805034",
+    "file_count": 4,
+    "stripped_prefix": "short-relation-path",
+    "primary": "research-note.md"
+  },
+  {
+    "stage": "16-three-block",
+    "source_archive": "three-block-path-research.zip",
+    "sha256": "009ae4be1163a2696e19623a9895fc855b1e381d807e38895a362e3c21297f83",
+    "file_count": 12,
+    "stripped_prefix": "three-block-path",
+    "primary": "research-note.md"
+  },
+  {
+    "stage": "17-even-fourier",
+    "source_archive": "path-classification-research.zip",
+    "sha256": "35fcf20756bf2d1979bf215cf511ba593a08c8d485f8d15466bc1f246dd11de7",
+    "file_count": 39,
+    "stripped_prefix": "even-fourier-path",
+    "primary": "research-note.md"
+  },
+  {
+    "stage": "18-audit",
+    "source_archive": "path-classification-audit.zip",
+    "sha256": "a329abe3c177f822be34e14fdc1bfac7e78dfd9225b1d2dfb0171656ac2dc0a1",
+    "file_count": 8,
+    "stripped_prefix": "path-audit",
+    "primary": "audit-report.md"
+  },
+  {
+    "stage": "19-revised-audit",
+    "source_archive": "path-classification-revised-audit.zip",
+    "sha256": "247241b84bd918b0c5066a83715bb1c3b2e87b9811db787d79fe65c1fdc748e2",
+    "file_count": 18,
+    "stripped_prefix": null,
+    "primary": "audit-addendum.md"
+  },
+  {
+    "stage": "20-third-audit",
+    "source_archive": "path-classification-third-audit.zip",
+    "sha256": "89456d75eaf436209a52eb03e5ce00c3632ff3b437c90ca482ebd56a1182b7d0",
+    "file_count": 8,
+    "stripped_prefix": "path-third-audit",
+    "primary": "audit-addendum.md"
+  },
+  {
+    "stage": "21-postrelease-audit",
+    "source_archive": "path-postrelease-audit.zip",
+    "sha256": "95b60669d466e9984c20965554dac3c0ea260e45751a4d66c1f614d879da06c2",
+    "file_count": 10,
+    "stripped_prefix": "path-postrelease-audit",
+    "primary": "README.md"
+  },
+  {
+    "stage": "22-lean-phase1",
+    "source_archive": "path-lean-phase1.zip",
+    "sha256": "9bd67b443fe4374317958616efec2d20f3990d3bb30394ad52128353107d4157",
+    "file_count": 5,
+    "stripped_prefix": "path-lean-phase1",
+    "primary": "README.md"
+  }
+]

@@ -1,0 +1,12 @@
+q 28 orbits 44 samples 5000
+distinct rows 32
+PASS 28 support 32 max denominator digits 20
+q 56 orbits 98 samples 5000
+distinct rows 70
+PASS 56 support 70 max denominator digits 49
+q 98 orbits 154 samples 5000
+distinct rows 95
+PASS 98 support 95 max denominator digits 96
+q 112 orbits 206 samples 5000
+distinct rows 144
+PASS 112 support 144 max denominator digits 146

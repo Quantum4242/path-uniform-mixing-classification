@@ -1,0 +1,16 @@
+PASS q=20: 171 mode pairs, 26 seed weights, 16 automorphisms
+PASS q=28: 351 mode pairs, 32 seed weights, 24 automorphisms
+PASS q=40: 741 mode pairs, 56 seed weights, 32 automorphisms
+PASS q=50: 1176 mode pairs, 55 seed weights, 40 automorphisms
+PASS q=56: 1485 mode pairs, 70 seed weights, 48 automorphisms
+PASS q=70: 2346 mode pairs, 96 seed weights, 48 automorphisms
+PASS q=80: 3081 mode pairs, 114 seed weights, 64 automorphisms
+PASS q=98: 4656 mode pairs, 95 seed weights, 84 automorphisms
+PASS q=100: 4851 mode pairs, 133 seed weights, 80 automorphisms
+PASS q=110: 5886 mode pairs, 138 seed weights, 80 automorphisms
+PASS q=112: 6105 mode pairs, 144 seed weights, 96 automorphisms
+PASS q=130: 8256 mode pairs, 162 seed weights, 96 automorphisms
+PASS q=140: 9591 mode pairs, 232 seed weights, 96 automorphisms
+PASS q=33: 496 mode pairs, 32 seed weights, 20 automorphisms
+PASS q=39: 703 mode pairs, 38 seed weights, 24 automorphisms
+TOTAL: 15 certificates, 49895 exact pairs

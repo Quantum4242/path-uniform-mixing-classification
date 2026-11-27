@@ -1,0 +1,3 @@
+# P19 finite arithmetic Lean output (maintainer screenshots)
+
+These four original user-provided VS Code screenshots show the progression of the 91-row matrix checker. `lean-info-120602.png` shows `Rows checked: 91/91`, the final `allChecks` theorem, and its axiom report `[propext]`. The status bar shows no errors or warnings. This is screenshot evidence of the maintainer's local finite-certificate check, not a fresh Lean run in the archive environment and not a proof of the complete P19 or path classification theorem. The other screenshots record intermediate progress. Review screenshots before public redistribution.

@@ -1,0 +1,150 @@
+P coefficients [10000, -3707, 254] T coefficient -1336
+bias 0 threshold 2 success True
+Z
+(121704774*n**3 - 4750735*n**2 + 11341862*n - 18628995)/(2*n**3)
+U
+-2*(9427103*n**3 + 9607186*n**2 - 29923359*n + 64354710)/n**4
+D
+-(37705166*n**3 + 15783578*n**2 - 43863387*n + 51483768)/(2*n**4)
+W
+0
+all margins > 14500000 for n>=2: PASS
+asymptotic margins [14561191, 14561191, 14567683, 14567683]
+shifted numerator 121704774*x**3 + 725477909*x**2 + 1452796210*x + 958689981 denominator 2*n**3
+shifted numerator 18854206*x**3 + 132339608*x**2 + 243261242*x + 236707120 denominator n**4
+shifted numerator 29122382*x**4 + 308446023*x**3 + 774854718*x**2 + 1086110467*x + 816993294 denominator 2*n**4
+shifted numerator 29122382*x**4 + 308446023*x**3 + 774854718*x**2 + 1086110467*x + 816993294 denominator 2*n**4
+shifted numerator 29135366*x**4 + 399130559*x**3 + 1015330122*x**2 + 1783953427*x + 1976046142 denominator 2*n**4
+shifted numerator 29135366*x**4 + 399130559*x**3 + 1015330122*x**2 + 1783953427*x + 1976046142 denominator 2*n**4
+bias 1 threshold 2 success True
+Z
+(243409548*n**4 - 47209882*n**3 + 26186325*n**2 - 7941564*n + 16129)/(4*n**4)
+U
+-(18854206*n**3 + 6845765*n**2 - 40652319*n + 60741814)/n**4
+D
+-(37705166*n**3 + 498483*n**2 - 25384760*n + 18516092)/(2*n**4)
+W
+-(18854206*n**3 + 5639384*n**2 - 32204787*n + 28870910)/n**4
+all margins > 14500000 for n>=2: PASS
+asymptotic margins [14561191, 14561191, 14567683, 14567683]
+shifted numerator 243409548*x**4 + 1900066502*x**3 + 5584756185*x**2 + 7319390688*x + 3605752013 denominator 4*n**4
+shifted numerator 18854206*x**3 + 119971001*x**2 + 212981213*x + 157653884 denominator n**4
+shifted numerator 58244764*x**4 + 635693822*x**3 + 2058307995*x**2 + 2619102500*x + 1401558499 denominator 4*n**4
+shifted numerator 58244764*x**4 + 654995918*x**3 + 2038960059*x**2 + 2820020068*x + 2035202147 denominator 4*n**4
+shifted numerator 58270732*x**4 + 741445942*x**3 + 2244838459*x**2 + 2920770180*x + 2104373475 denominator 4*n**4
+shifted numerator 58270732*x**4 + 760748038*x**3 + 2225490523*x**2 + 3121687748*x + 2738017123 denominator 4*n**4
+central 35 symmetric 36365 axis vectors; nonzero-axis arrays 44 {(2, 2, 2, 2, 2): 2, (1, 1, 1, 1, 1, 1, 1, 1): 18, (1, 1, 1, 1, 1): 2, (1, 1, 1, 1, 1, 1, 1, 1, 2): 6, (1, 1, 1, 1, 1, 1, 1, 1, 1): 12, (1, 1, 1, 1, 1, 1, 1, 1, 1, 1): 4} PASS
+central 35 antisymmetric 36365 axis vectors; nonzero-axis arrays 24 {(1, 1, 1, 1, 1, 1, 1, 1, 2): 24} PASS
+mixed central 5 11 symmetric cases [(4, 8, 20), (4, 10, 14)] antisymmetric none: PASS
+mixed central 5 13 symmetric cases [(4, 12, 16)] antisymmetric none: PASS
+mixed central 5 17 symmetric cases [(4, 16, 20)] antisymmetric none: PASS
+mixed central 7 11 symmetric cases [(6, 10, 16)] antisymmetric none: PASS
+mixed central 7 13 symmetric cases [(6, 12, 18)] antisymmetric none: PASS
+central 385 symmetric exceptional slice: all 243 axis tuples PASS
+all exceptional even moduli: [20, 28, 40, 50, 56, 70, 80, 98, 100, 110, 112, 130, 140] PASS
+bias 0 pattern (1, 1, 1, 1, 1) one relation error bound 30*(4583117*n**2 + 36959794*n - 49677320)/n**4
+bias 0 pattern (1, 1, 1, 1, 1, 1, 1) one relation error bound 960120*(389*n + 1778)/n**4
+bias 0 pattern (1, 1, 1, 1, 1, 1, 1, 1) one relation error bound 1280160*(2183*n - 889)/n**4
+bias 0 pattern (1, 1, 1, 1, 1, 1, 1, 1, 1) one relation error bound 1463222880/n**4
+bias 0 pattern (1, 1, 1, 1, 1, 1, 1, 1, 1, 1) one relation error bound 7316114400/n**4
+bias 0 pattern (2, 2, 2, 2, 2) one relation error bound 254031750/n**4
+bias 0 pattern (1, 1, 1, 1, 1, 1, 1, 1, 2) one relation error bound 3739347360/n**4
+bias 0 ALL total bound 12*(4583117*n**3 + 117542015*n**2 + 6833118795*n + 18802301105)/n**4
+All-n >= 35 positivity: PASS
+n 17 bound 2297421801312/83521 below 14500000? False
+n 20 bound 143487851403/8000 below 14500000? False
+n 25 bound 803292560352/78125 below 14500000? True
+n 27 bound 1516776517664/177147 below 14500000? True
+n 30 bound 90665567491/13500 below 14500000? True
+n 34 bound 1701425220129/334084 below 14500000? True
+n 35 bound 4187416224/875 below 14500000? True
+n 40 bound 464108258943/128000 below 14500000? True
+n 50 bound 736321742013/312500 below 14500000? True
+n 60 bound 368378790961/216000 below 14500000? True
+n 69 bound 10222000855712/7555707 below 14500000? True
+n 70 bound 226721624679/171500 below 14500000? True
+n 100 bound 3876390798363/5000000 below 14500000? True
+n 200 bound 25651225596063/80000000 below 14500000? True
+no7 bound 12*(4583117*n**3 + 85733890*n**2 + 242932585*n + 7410952920)/n**4 n>=27 True
+bias 1 pattern (1, 1, 1, 1, 1) one relation error bound 30*(25968783*n**2 + 77906880*n - 240935002)/n**4
+bias 1 pattern (1, 1, 1, 1, 1, 1, 1) one relation error bound 1280160*(2183*n - 1651)/n**4
+bias 1 pattern (1, 1, 1, 1, 1, 1, 1, 1) one relation error bound 1280160*(2183*n - 1651)/n**4
+bias 1 pattern (1, 1, 1, 1, 1, 1, 1, 1, 1) one relation error bound 7316114400/n**4
+bias 1 pattern (1, 1, 1, 1, 1, 1, 1, 1, 1, 1) one relation error bound 7316114400/n**4
+bias 1 pattern (2, 2, 2, 2, 2) one relation error bound 254031750/n**4
+bias 1 pattern (1, 1, 1, 1, 1, 1, 1, 1, 2) one relation error bound 3739347360/n**4
+bias 1 ALL total bound 12*(25968783*n**3 + 323062731*n**2 + 7159146083*n + 22249229695)/n**4
+All-n >= 35 positivity: PASS
+n 17 bound 4378853678928/83521 below 14500000? False
+n 20 bound 301444504653/8000 below 14500000? False
+n 25 bound 1941370375248/78125 below 14500000? False
+n 27 bound 3848809842496/177147 below 14500000? False
+n 30 bound 245787442217/13500 below 14500000? False
+n 34 bound 4979393281755/334084 below 14500000? False
+n 35 bound 122193103488/8575 below 14500000? True
+n 40 bound 1492510532769/128000 below 14500000? True
+n 50 bound 2660376741807/312500 below 14500000? True
+n 60 bound 288963238171/43200 below 14500000? True
+n 69 bound 42341243625040/7555707 below 14500000? True
+n 70 bound 944030520549/171500 below 14500000? True
+n 100 bound 17962544488797/5000000 below 14500000? True
+n 200 bound 133276111011777/80000000 below 14500000? True
+no7 bound 12*(25968783*n**3 + 126680976*n**2 + 455192003*n + 6611599680)/n**4 n>=27 True
+NEGATIVE CONTROL q=12: exact equal gaps (1,5) and (3,6), opposite parity
+NEGATIVE CONTROL q=15: exact equal gaps (1,4) and (3,5), opposite parity
+NEGATIVE CONTROL q=21: exact equal gaps (3,7) and (6,9), opposite parity
+NEGATIVE CONTROL q=30: exact equal gaps (4,14) and (6,15), opposite parity
+PASS q=20, P_19: 171 full pairs; 26 seed orbits; G=16; exact
+PASS q=28, P_27: 351 full pairs; 32 seed orbits; G=24; exact
+PASS q=40, P_39: 741 full pairs; 56 seed orbits; G=32; exact
+PASS q=50, P_49: 1176 full pairs; 55 seed orbits; G=40; exact
+PASS q=56, P_55: 1485 full pairs; 70 seed orbits; G=48; exact
+PASS q=70, P_69: 2346 full pairs; 96 seed orbits; G=48; exact
+PASS q=80, P_79: 3081 full pairs; 114 seed orbits; G=64; exact
+PASS q=98, P_97: 4656 full pairs; 95 seed orbits; G=84; exact
+PASS q=100, P_99: 4851 full pairs; 133 seed orbits; G=80; exact
+PASS q=110, P_109: 5886 full pairs; 138 seed orbits; G=80; exact
+PASS q=112, P_111: 6105 full pairs; 144 seed orbits; G=96; exact
+PASS q=130, P_129: 8256 full pairs; 162 seed orbits; G=96; exact
+PASS q=140, P_139: 9591 full pairs; 232 seed orbits; G=96; exact
+Z = (335016*b**4 + 414504*b**3 + 122490*b**2 + 126705*b + 2209)/(3*b + 1)**4 PASS
+U = -8*(8154*b**3 + 9171*b**2 + 21603*b - 14243)/(3*b + 1)**4 PASS
+V = -24*(2718*b**3 + 1857*b**2 + 11035*b - 21989)/(3*b + 1)**4 PASS
+W = -8*(8154*b**3 + 9171*b**2 + 21015*b - 13655)/(3*b + 1)**4 PASS
+V-U shift b=4+x positive numerator: 28800*x**2 + 138384*x + 506528
+V-W shift b=4+x positive numerator: 28800*x**2 + 133680*x + 492416
+G-E shift b=4+x positive numerator: 56376*x**4 + 539784*x**3 + 3753414*x**2 + 10792767*x + 2172683
+G-E-extra shift b=16+x positive numerator: 56376*x**4 + 3245832*x**3 + 71894502*x**2 + 648979023*x + 1550708831
+margin at b=16: 4521017/16807
+central conductor 33 parameter vectors 1024 counts {(10, 2, 1, 'simple'): 5, (10, 2, 0, 'double'): 5, (8, 2, 0, 'simple'): 10} PASS
+central conductor 39 parameter vectors 4096 counts {(10, -2, 1, 'simple'): 1, (8, -2, 0, 'simple'): 6} PASS
+central conductor 51 parameter vectors 65536 counts {} PASS
+central conductor 57 parameter vectors 262144 counts {} PASS
+q= 33 exact ordinary correction 862785/2048 positivity margin -643381/4096
+q= 39 exact ordinary correction 34231680/130321 positivity margin 9760481/130321
+q=9 explicit law: rho= 5/21 lambda= 3/5 PASS
+ALL EXACT ASSERTIONS PASSED
+NEGATIVE CONTROL q=12: exact equal gaps (1,5) and (3,6), opposite parity
+NEGATIVE CONTROL q=15: exact equal gaps (1,4) and (3,5), opposite parity
+NEGATIVE CONTROL q=21: exact equal gaps (3,7) and (6,9), opposite parity
+NEGATIVE CONTROL q=30: exact equal gaps (4,14) and (6,15), opposite parity
+PASS q=33, P_32: 496 full pairs; 32 seed orbits; G=20; exact
+PASS q=39, P_38: 703 full pairs; 38 seed orbits; G=24; exact
+central 35 parameter vectors checked: 36365
+central 35 nonzero arrays of length <=10: 72
+central 35 relevant arrays: 20 PASS
+mixed central support 55 [(4, 8, 20), (4, 10, 14)] PASS
+mixed central support 65 [(4, 12, 16)] PASS
+mixed central support 85 [(4, 16, 20)] PASS
+mixed central support 77 [(6, 10, 16)] PASS
+mixed central support 91 [(6, 12, 18)] PASS
+385 central slice: 243 integer arrays checked; no feasible norm 5: PASS
+direct cyclotomic checks: 31 relations PASS
+moment formula, density slack >=696: PASS
+q=35: all 289 moments, E= 31239432/83521 G= 5397327/4913 PASS
+pure q>=25 : E <= 392 PASS
+q>=55 and 35 not dividing q : E <= 3132416/19683 PASS
+35 divides q, q>=175 : E <= 17153920/707281 PASS
+q=35 exact : E <= 31239432/83521 PASS
+strict density floor and grid constants: PASS
+ALL EXACT CHECKS PASSED

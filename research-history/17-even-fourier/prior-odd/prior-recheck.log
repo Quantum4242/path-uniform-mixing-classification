@@ -1,0 +1,18 @@
+central 35 parameter vectors checked: 36365
+central 35 nonzero arrays of length <=10: 72
+central 35 relevant arrays: 20 PASS
+mixed central support 55 [(4, 8, 20), (4, 10, 14)] PASS
+mixed central support 65 [(4, 12, 16)] PASS
+mixed central support 85 [(4, 16, 20)] PASS
+mixed central support 77 [(6, 10, 16)] PASS
+mixed central support 91 [(6, 12, 18)] PASS
+385 central slice: 243 integer arrays checked; no feasible norm 5: PASS
+direct cyclotomic checks: 31 relations PASS
+moment formula, density slack >=696: PASS
+q=35: all 289 moments, E= 31239432/83521 G= 5397327/4913 PASS
+pure q>=25 : E <= 392 PASS
+q>=55 and 35 not dividing q : E <= 3132416/19683 PASS
+35 divides q, q>=175 : E <= 17153920/707281 PASS
+q=35 exact : E <= 31239432/83521 PASS
+strict density floor and grid constants: PASS
+ALL EXACT CHECKS PASSED

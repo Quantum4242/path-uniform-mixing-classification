@@ -1,0 +1,5 @@
+595 rows 608 ns 3500
+start LP
+Optimization terminated successfully. (HiGHS Status 7: Optimal)
+support 608 min 2.0403739377435095e-05 err 1.033673147077252e-12
+saved

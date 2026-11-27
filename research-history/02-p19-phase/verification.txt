@@ -1,0 +1,7 @@
+Cyclotomic relation verified; rank = 8; minor determinant = -2.
+Distinct positive Bohr frequencies = 90; Carathéodory bound = 91.
+Odd support 141, even support 52, joint support 7332.
+All 171 distinct spectral pairs verified exactly: {'0': 90, '-1/18': 81}.
+Mixing with 1/19 Haar measure gives the exact target moments.
+Independent exact spectral mixing check: all 361 entries equal 1/19.
+PASS (finite algebra certificate only; not a Lean proof).

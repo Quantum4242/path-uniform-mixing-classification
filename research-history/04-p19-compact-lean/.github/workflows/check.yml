@@ -1,0 +1,31 @@
+name: P19 finite certificate (not full theorem)
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  finite-certificate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - name: Exact Python cross-check
+        run: |
+          python3 check_compact.py
+          python3 check_gap_formula.py
+      - uses: leanprover/lean-action@v1
+        with:
+          auto-config: false
+      - name: Compile and audit the finite certificate
+        shell: bash
+        run: |
+          set -o pipefail
+          lake build 2>&1 | tee lean-build.log
+          lake env lean Audit.lean 2>&1 | tee lean-axioms.log
+          if grep -E 'sorryAx|Lean\.ofReduceBool|Lean\.trustCompiler|declaration uses .sorry.' lean-axioms.log lean-build.log; then exit 1; fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: finite-certificate-logs
+          path: |
+            lean-build.log
+            lean-axioms.log

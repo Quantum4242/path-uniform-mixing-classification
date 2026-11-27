@@ -1,0 +1,4 @@
+verify_odd_inventory.py: exit=0, elapsed=3.18s
+verify_large_even.py: exit=0, elapsed=3.57s
+verify_phase1.py: exit=0, elapsed=1.20s
+3/3 supplemental arithmetic/source checks passed. Lean kernel compilation NOT performed.

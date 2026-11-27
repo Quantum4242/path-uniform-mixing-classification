@@ -1,0 +1,7 @@
+PASS symbolic ratio bound and universal even-q margin (q>=46, alpha>=2/3, beta/(B/n)>=2/3)
+PASS q=23: 55 same-group pairs, auxiliary a=13/220, min pair-law mass/mixture bound=3/16
+PASS q=46: 110 same-group pairs, auxiliary a=1/36, min pair-law mass/mixture bound=719/27648
+PASS q=92: 484 same-group pairs, auxiliary a=5/364, min pair-law mass/mixture bound=1299/81536
+PASS q=667: 55278 same-group pairs, auxiliary a=1733/1125540, min pair-law mass/mixture bound=43/1776
+PASS q=1334: 110556 same-group pairs, auxiliary a=33/42656, min pair-law mass/mixture bound=106625359/29112549376
+PASS q=1058: 69432 same-group pairs, auxiliary a=5/4228, min pair-law mass/mixture bound=25211079/1144062976

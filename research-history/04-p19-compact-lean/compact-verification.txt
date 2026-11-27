@@ -1,0 +1,5 @@
+PASS: 8281 entry enclosures; 171 gap targets in 90 groups.
+PASS: 91 integer row certificates; global norm and exact rational bounds.
+PASS: 361 exact mixing identities in Z[X]/(Phi40).
+PASS: all conditions of the mathematical compact-certificate proof.
+PASS: simplified power coefficients match all 40 original residue vectors; all 171 gaps covered.

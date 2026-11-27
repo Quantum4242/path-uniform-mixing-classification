@@ -1,0 +1,234 @@
+PASS symbolic p=3, R=9+3t: 486*x**4 + 3564*x**3 + 8694*x**2 + 7488*x + 936
+PASS symbolic p=3, R=10+3t: 486*x**4 + 4212*x**3 + 12582*x**2 + 14544*x + 4536
+PASS symbolic p=3, R=8+3t: 486*x**4 + 3240*x**3 + 7290*x**2 + 6084*x + 1152
+PASS symbolic p=5, R=10+5t: 12500*x**4 + 65000*x**3 + 112300*x**2 + 66040*x + 2496
+PASS symbolic p=5, R=11+5t: 12500*x**4 + 80000*x**3 + 180300*x**2 + 163120*x + 45040
+PASS symbolic p=5, R=12+5t: 12500*x**4 + 85000*x**3 + 202300*x**2 + 190280*x + 51360
+PASS symbolic p=5, R=13+5t: 12500*x**4 + 92500*x**3 + 240300*x**2 + 248220*x + 75024
+PASS symbolic p=5, R=14+5t: 12500*x**4 + 102500*x**3 + 298800*x**2 + 355840*x + 135040
+PASS symbolic p=7, R=14+7t: 100842*x**4 + 633864*x**3 + 1425018*x**2 + 1323672*x + 404712
+PASS symbolic p=7, R=15+7t: 100842*x**4 + 662676*x**3 + 1552614*x**2 + 1491084*x + 459648
+PASS symbolic p=7, R=16+7t: 100842*x**4 + 701092*x**3 + 1736462*x**2 + 1758988*x + 567408
+PASS symbolic p=7, R=17+7t: 100842*x**4 + 749112*x**3 + 1988910*x**2 + 2173836*x + 770052
+PASS symbolic p=7, R=18+7t: 100842*x**4 + 806736*x**3 + 2322306*x**2 + 2789136*x + 1123416
+PASS symbolic p=7, R=12+7t: 100842*x**4 + 470596*x**3 + 732158*x**2 + 385980*x + 9216
+PASS symbolic p=7, R=13+7t: 100842*x**4 + 547428*x**3 + 1033998*x**2 + 756756*x + 145584
+PASS symbolic p=11, R=22+11t: 1610510*x**4 + 10600084*x**3 + 25207446*x**2 + 25185864*x + 8574696
+PASS symbolic p=11, R=23+11t: 1610510*x**4 + 11010032*x**3 + 27187974*x**2 + 28184464*x + 9930460
+PASS symbolic p=11, R=24+11t: 1610510*x**4 + 11478544*x**3 + 29578450*x**2 + 32047796*x + 11841120
+PASS symbolic p=11, R=25+11t: 1610510*x**4 + 12005620*x**3 + 32426790*x**2 + 36971880*x + 14500800
+PASS symbolic p=11, R=26+11t: 1610510*x**4 + 12591260*x**3 + 35780910*x**2 + 43170160*x + 18139000
+PASS symbolic p=11, R=16+11t: 1610510*x**4 + 6793424*x**3 + 9645394*x**2 + 4760404*x + 213504
+PASS symbolic p=11, R=17+11t: 1610510*x**4 + 7496192*x**3 + 12046518*x**2 + 7306552*x + 1001908
+PASS symbolic p=11, R=18+11t: 1610510*x**4 + 8257524*x**3 + 14921478*x**2 + 10748408*x + 2267880
+PASS symbolic p=11, R=19+11t: 1610510*x**4 + 9077420*x**3 + 18318190*x**2 + 15273280*x + 4173600
+PASS symbolic p=11, R=20+11t: 1610510*x**4 + 9955880*x**3 + 22284570*x**2 + 21085900*x + 6912400
+PASS symbolic p=11, R=21+11t: 1610510*x**4 + 10248700*x**3 + 23588950*x**2 + 22873400*x + 7612440
+PASS universal disparate-prime margin lower bound: 332800/310821
+PASS all nontrivial two-prime powers r>=23: 36*x**4 + 2070*x**3 + 39386*x**2 + 248672*x + 10472
+PASS moments p=3,r=17,H=1,M=6,a=17/800,lambda=1785/1864
+PASS moments p=3,r=19,H=1,M=7,a=33/1792,lambda=8316/8465
+PASS moments p=3,r=23,H=1,M=9,a=5/272,lambda=6600/7231
+PASS moments p=3,r=29,H=1,M=12,a=3/172,lambda=9009/9040
+PASS moments p=3,r=31,H=1,M=13,a=5/368,lambda=2275/2607
+PASS moments p=3,r=37,H=1,M=16,a=3/220,lambda=918/931
+PASS moments p=5,r=23,H=1,M=10,a=3/304,lambda=297/322
+PASS moments p=5,r=29,H=1,M=13,a=1/128,lambda=21/23
+PASS moments p=5,r=31,H=1,M=14,a=5/616,lambda=6125/6501
+PASS moments p=5,r=37,H=1,M=17,a=5/736,lambda=17340/19313
+PASS moments p=5,r=41,H=1,M=19,a=5/816,lambda=45125/53888
+PASS moments p=5,r=43,H=1,M=20,a=3/428,lambda=3325/3519
+PASS moments p=7,r=29,H=1,M=14,a=5/808,lambda=8281/8468
+PASS moments p=7,r=31,H=1,M=15,a=1/192,lambda=1225/1353
+PASS moments p=7,r=37,H=1,M=18,a=5/1032,lambda=2601/2656
+PASS moments p=7,r=41,H=1,M=20,a=5/1144,lambda=875/992
+PASS moments p=7,r=43,H=1,M=21,a=1/200,lambda=9800/9843
+PASS moments p=7,r=47,H=1,M=23,a=5/1312,lambda=192027/221920
+PASS moments p=11,r=37,H=1,M=20,a=9/3248,lambda=95931/100009
+PASS moments p=11,r=41,H=1,M=22,a=1/360,lambda=4389/4736
+PASS moments p=11,r=43,H=1,M=23,a=5/1888,lambda=8050/8483
+PASS moments p=11,r=47,H=1,M=25,a=5/2064,lambda=8349000/8615911
+PASS moments p=11,r=53,H=1,M=28,a=5/2328,lambda=12285/13061
+PASS moments p=11,r=59,H=1,M=31,a=5/2592,lambda=2076690/2406883
+PASS moments p=3,r=41,H=1,M=18,a=3/244,lambda=49419/54272
+PASS moments p=3,r=41,H=3,M=56,a=3/736,lambda=386631/396544
+PASS moments p=3,r=41,H=41,M=778,a=3/10084,lambda=21485637/21927424
+PASS moments p=3,r=41,H=123,M=2336,a=3/30256,lambda=4032009/4113856
+PASS moments p=3,r=41,H=369,M=7010,a=3/90772,lambda=193591665/197504512
+PASS moments p=5,r=41,H=1,M=19,a=5/816,lambda=2915075/3448832
+PASS moments p=5,r=41,H=5,M=95,a=3/2048,lambda=4326585/4425728
+PASS moments p=5,r=41,H=41,M=779,a=3/16808,lambda=71710845/73086976
+PASS moments p=5,r=41,H=205,M=3895,a=1/28016,lambda=59743695/60952576
+PASS moments p=5,r=41,H=1025,M=19475,a=3/420248,lambda=128048505/130632704
+PASS moments p=7,r=59,H=1,M=29,a=3/824,lambda=886704/933125
+PASS moments p=7,r=59,H=7,M=197,a=3/5780,lambda=6023472/6685625
+PASS moments p=7,r=59,H=59,M=1653,a=1/16244,lambda=16847376/18846875
+PASS moments p=7,r=59,H=413,M=11565,a=1/113712,lambda=2619344/2932875
+PASS moments p=7,r=59,H=2891,M=80949,a=1/795988,lambda=825032208/923906875
+PASS moments p=11,r=89,H=1,M=46,a=1/652,lambda=57539031/61979008
+PASS moments p=11,r=89,H=11,M=476,a=3/21536,lambda=28281684585/33404182528
+PASS moments p=11,r=89,H=89,M=3830,a=3/174260,lambda=3668756162379/4375381470080
+PASS moments p=11,r=89,H=979,M=42100,a=1/638960,lambda=14779758194421/17645239350272
+PASS moments p=11,r=89,H=10769,M=463070,a=3/21085700,lambda=53644729799002551/64052427676302080
+PASS moments p=13,r=107,H=1,M=56,a=3/2780,lambda=580008000/623048867
+PASS moments p=13,r=107,H=13,M=680,a=3/36164,lambda=86948472000/104860217903
+PASS moments p=13,r=107,H=107,M=5568,a=1/99224,lambda=908007093760/1104681638711
+PASS moments p=13,r=107,H=1391,M=72336,a=1/1289920,lambda=766375783888000/933417394772751
+PASS moments p=13,r=107,H=18083,M=940320,a=1/16768968,lambda=43168646095328000/52582345925804233
+PASS moments p=3,r=23,H=3,M=29,a=9/1648,lambda=313200/318157
+PASS moments p=3,r=23,H=23,M=229,a=9/12688,lambda=2473200/2481997
+PASS moments p=3,r=23,H=69,M=689,a=9/38080,lambda=7441200/7458829
+PASS moments p=3,r=23,H=207,M=2069,a=9/114256,lambda=893808/895573
+PASS moments p=5,r=23,H=5,M=50,a=9/4592,lambda=1800/1817
+PASS moments p=5,r=23,H=23,M=230,a=9/21152,lambda=412200/413609
+PASS moments p=5,r=23,H=115,M=1150,a=3/35264,lambda=689400/690851
+PASS moments p=5,r=23,H=575,M=5750,a=9/528992,lambda=10348200/10367273
+PASS moments p=7,r=23,H=7,M=71,a=17/18016,lambda=482800/500521
+PASS moments p=7,r=23,H=23,M=231,a=17/59232,lambda=1564000/1654569
+PASS moments p=7,r=23,H=161,M=1611,a=1/23040,lambda=214800/214963
+PASS moments p=7,r=23,H=1127,M=11271,a=3/483856,lambda=541008/541891
+PASS moments p=11,r=23,H=11,M=113,a=17/44512,lambda=676192000/685604423
+PASS moments p=11,r=23,H=23,M=233,a=17/93088,lambda=297308000/309390361
+PASS moments p=11,r=23,H=253,M=2533,a=17/1024128,lambda=2398669944000/2539245453269
+PASS moments p=11,r=23,H=2783,M=27833,a=9/5632784,lambda=3130210512000/3135206287073
+PASS moments p=13,r=23,H=13,M=134,a=17/62176,lambda=112533200/113516347
+PASS moments p=13,r=23,H=23,M=234,a=17/110016,lambda=10298600/10754079
+PASS moments p=13,r=23,H=299,M=2994,a=17/1430400,lambda=132026018800/139731255867
+PASS moments p=13,r=23,H=3887,M=38874,a=3/3099232,lambda=261932493680/262353236663
+PASS moments p=17,r=23,H=17,M=176,a=17/106336,lambda=369920/370867
+PASS moments p=17,r=23,H=23,M=236,a=17/143872,lambda=6411176000/6584907973
+PASS moments p=17,r=23,H=391,M=3916,a=17/2446080,lambda=32223268800/34094364493
+PASS moments p=17,r=23,H=6647,M=66476,a=9/20791808,lambda=2163538532160/2167065847919
+PASS moments p=19,r=23,H=19,M=197,a=17/132832,lambda=61085760/61121033
+PASS moments p=19,r=23,H=23,M=237,a=17/160800,lambda=301100600/303865219
+PASS moments p=19,r=23,H=437,M=4377,a=17/3055488,lambda=2474664758400/2618123385059
+PASS moments p=19,r=23,H=8303,M=83037,a=3/9675760,lambda=471622126708800/472396121480479
+PASS moments p=3,r=29,H=3,M=38,a=1/208,lambda=105963/113000
+PASS moments p=3,r=29,H=29,M=376,a=5/10088,lambda=262119/277070
+PASS moments p=3,r=29,H=87,M=1130,a=5/30272,lambda=48477/51208
+PASS moments p=3,r=29,H=261,M=3392,a=5/90824,lambda=1182324/1248655
+PASS moments p=5,r=29,H=5,M=65,a=5/2896,lambda=3718/3947
+PASS moments p=5,r=29,H=29,M=377,a=5/16816,lambda=32939621/34676674
+PASS moments p=5,r=29,H=145,M=1885,a=5/84096,lambda=875589/924776
+PASS moments p=5,r=29,H=725,M=9425,a=5/420496,lambda=1094951/1156294
+PASS moments p=7,r=29,H=7,M=92,a=1/1136,lambda=299299/310300
+PASS moments p=7,r=29,H=29,M=378,a=5/23544,lambda=169169/178320
+PASS moments p=7,r=29,H=203,M=2640,a=5/164832,lambda=143143/151061
+PASS moments p=7,r=29,H=1421,M=18474,a=5/1153848,lambda=40067027/42306360
+PASS moments p=11,r=29,H=11,M=146,a=5/14032,lambda=216452665/220644272
+PASS moments p=11,r=29,H=29,M=380,a=1/7400,lambda=11327173/11782700
+PASS moments p=11,r=29,H=319,M=4150,a=1/81408,lambda=35209803915/37135453648
+PASS moments p=11,r=29,H=3509,M=45620,a=1/895496,lambda=43425721339/45851813792
+PASS moments p=13,r=29,H=13,M=173,a=1/3920,lambda=13829101/14042000
+PASS moments p=13,r=29,H=29,M=381,a=5/43728,lambda=236093/244944
+PASS moments p=13,r=29,H=377,M=4905,a=5/568512,lambda=124212803/130987976
+PASS moments p=13,r=29,H=4901,M=63717,a=5/7390704,lambda=628929501629/664070633520
+PASS moments p=17,r=29,H=17,M=227,a=1/6704,lambda=810648553/819288500
+PASS moments p=17,r=29,H=29,M=383,a=5/57184,lambda=2311854259/2376616640
+PASS moments p=17,r=29,H=493,M=6415,a=5/972192,lambda=130033103343/137102870176
+PASS moments p=17,r=29,H=8381,M=108959,a=5/16527328,lambda=14430360964591/15236877300080
+PASS moments p=19,r=29,H=19,M=254,a=5/41872,lambda=309517923/312345760
+PASS moments p=19,r=29,H=29,M=384,a=5/63912,lambda=162335316/166963255
+PASS moments p=19,r=29,H=551,M=7170,a=1/242880,lambda=181556050533/191416720960
+PASS moments p=19,r=29,H=10469,M=136104,a=5/23073672,lambda=7435135808529/7850739467980
+PASS moments p=23,r=29,H=23,M=308,a=1/12272,lambda=144390389/145397500
+PASS moments p=23,r=29,H=29,M=386,a=5/77368,lambda=635411777/648869656
+PASS moments p=23,r=29,H=667,M=8680,a=5/1779552,lambda=11503728093/12127582486
+PASS moments p=23,r=29,H=15341,M=199442,a=5/40929784,lambda=850370711524477/897914120775560
+PASS moments p=3,r=31,H=3,M=41,a=5/1112,lambda=80360/88693
+PASS moments p=3,r=31,H=31,M=433,a=5/11528,lambda=848680/928917
+PASS moments p=3,r=31,H=93,M=1301,a=5/34592,lambda=2549960/2789413
+PASS moments p=3,r=31,H=279,M=3905,a=5/103784,lambda=99400/108713
+PASS moments p=5,r=31,H=5,M=70,a=5/3096,lambda=338100/371591
+PASS moments p=5,r=31,H=31,M=434,a=5/19216,lambda=2126600/2322111
+PASS moments p=5,r=31,H=155,M=2170,a=5/96096,lambda=10628100/11624591
+PASS moments p=5,r=31,H=775,M=10850,a=5/480496,lambda=53160100/58136991
+PASS moments p=7,r=31,H=7,M=99,a=5/6072,lambda=13720/14751
+PASS moments p=7,r=31,H=31,M=435,a=5/26904,lambda=1989400/2167231
+PASS moments p=7,r=31,H=217,M=3039,a=5/188352,lambda=13898360/15190703
+PASS moments p=7,r=31,H=1519,M=21267,a=5/1318488,lambda=32420360/35451669
+PASS moments p=11,r=31,H=11,M=157,a=1/3000,lambda=9600864/10161085
+PASS moments p=11,r=31,H=31,M=437,a=1/8456,lambda=373442720/403649961
+PASS moments p=11,r=31,H=341,M=4777,a=1/93024,lambda=44717305920/48850197869
+PASS moments p=11,r=31,H=3751,M=52517,a=1/1023272,lambda=5405646233120/5910966967257
+PASS moments p=13,r=31,H=13,M=186,a=5/20952,lambda=146127800/154093137
+PASS moments p=13,r=31,H=31,M=438,a=5/49968,lambda=162567496/175074537
+PASS moments p=13,r=31,H=403,M=5646,a=5/649632,lambda=135348358600/147839822757
+PASS moments p=13,r=31,H=5239,M=73350,a=5/8445264,lambda=7615900019000/8327882509727
+PASS moments p=17,r=31,H=17,M=244,a=5/35832,lambda=1975609440/2074233667
+PASS moments p=17,r=31,H=31,M=440,a=5/65344,lambda=117019840/125774121
+PASS moments p=17,r=31,H=527,M=7384,a=5/1110912,lambda=1816475519040/1983832197457
+PASS moments p=17,r=31,H=8959,M=125432,a=5/18885568,lambda=74889371273920/81891559564023
+PASS moments p=19,r=31,H=19,M=273,a=1/8952,lambda=79008384/82835995
+PASS moments p=19,r=31,H=31,M=441,a=5/73032,lambda=656913600/702117559
+PASS moments p=19,r=31,H=589,M=8253,a=1/277536,lambda=10351770912/11304974945
+PASS moments p=19,r=31,H=11191,M=156681,a=5/26365992,lambda=130599504705600/142811436670111
+PASS moments p=23,r=31,H=23,M=331,a=5/65592,lambda=223822200/234196201
+PASS moments p=23,r=31,H=31,M=443,a=5/88408,lambda=4413467240/4682043861
+PASS moments p=23,r=31,H=713,M=9991,a=5/2033472,lambda=2249719428600/2456711342921
+PASS moments p=23,r=31,H=16399,M=229595,a=5/46769944,lambda=1188165320052200/1299279349051563
+PASS moments p=29,r=31,H=29,M=418,a=1/20856,lambda=630480648/658464125
+PASS moments p=29,r=31,H=31,M=446,a=5/111472,lambda=15793448720/16550865573
+PASS moments p=29,r=31,H=899,M=12598,a=1/646560,lambda=6314236474728/6894759185875
+PASS moments p=29,r=31,H=26071,M=365006,a=5/93751312,lambda=26504580250068200/28983530664246807
+PASS moments p=3,r=37,H=3,M=50,a=5/1328,lambda=108375/128968
+PASS moments p=3,r=37,H=37,M=628,a=5/16424,lambda=680595/804188
+PASS moments p=3,r=37,H=111,M=1886,a=1/9856,lambda=4087905/4828264
+PASS moments p=3,r=37,H=333,M=5660,a=5/147848,lambda=6134025/7243964
+PASS moments p=5,r=37,H=5,M=85,a=5/3696,lambda=425/504
+PASS moments p=5,r=37,H=37,M=629,a=5/27376,lambda=4544525/5360992
+PASS moments p=5,r=37,H=185,M=3145,a=5/136896,lambda=946475/1117788
+PASS moments p=5,r=37,H=925,M=15725,a=5/684496,lambda=28401475/33539128
+PASS moments p=7,r=37,H=7,M=120,a=5/7248,lambda=7225/8414
+PASS moments p=7,r=37,H=37,M=630,a=5/38328,lambda=908905/1072176
+PASS moments p=7,r=37,H=259,M=4404,a=1/53664,lambda=530315/625996
+PASS moments p=7,r=37,H=1813,M=30822,a=5/1878264,lambda=39695/46872
+PASS moments p=11,r=37,H=11,M=190,a=5/17904,lambda=67951125/78109136
+PASS moments p=11,r=37,H=37,M=632,a=5/60232,lambda=46608815/54545918
+PASS moments p=11,r=37,H=407,M=6922,a=5/662592,lambda=634570283325/748794549776
+PASS moments p=11,r=37,H=4477,M=76112,a=5/7288552,lambda=4110674377975/4853836843828
+PASS moments p=13,r=37,H=13,M=225,a=5/25008,lambda=469625/538202
+PASS moments p=13,r=37,H=37,M=633,a=5/71184,lambda=62625433/73174248
+PASS moments p=13,r=37,H=481,M=8181,a=1/185088,lambda=34919530425/41201701744
+PASS moments p=13,r=37,H=6253,M=106305,a=5/12030768,lambda=65037576175/76795913313
+PASS moments p=17,r=37,H=17,M=295,a=5/42768,lambda=7246675/8274812
+PASS moments p=17,r=37,H=37,M=635,a=5/93088,lambda=4944811675/5749300144
+PASS moments p=17,r=37,H=629,M=10699,a=1/316512,lambda=36046902085/42527614304
+PASS moments p=17,r=37,H=10693,M=181787,a=5/26903584,lambda=405891567655915/479278152824464
+PASS moments p=19,r=37,H=19,M=330,a=5/53424,lambda=70971175/80945536
+PASS moments p=19,r=37,H=37,M=636,a=1/20808,lambda=923998025/1071157836
+PASS moments p=19,r=37,H=703,M=11958,a=5/1976832,lambda=11895652981/14033861856
+PASS moments p=19,r=37,H=13357,M=227076,a=1/7511976,lambda=117972493877375/139302875959688
+PASS moments p=23,r=37,H=23,M=400,a=5/78288,lambda=173652875/197728167
+PASS moments p=23,r=37,H=37,M=638,a=5/125944,lambda=1516080995/1753064408
+PASS moments p=23,r=37,H=851,M=14476,a=1/579360,lambda=911960922125/1075833116316
+PASS moments p=23,r=37,H=19573,M=332750,a=5/66626488,lambda=20239193181576875/23898762364680056
+PASS moments p=29,r=37,H=29,M=505,a=5/124464,lambda=63486075/72174544
+PASS moments p=29,r=37,H=37,M=641,a=1/31760,lambda=214888840/248040961
+PASS moments p=29,r=37,H=1073,M=18253,a=5/4605312,lambda=232680135753/274478862784
+PASS moments p=29,r=37,H=31117,M=529001,a=1/26710832,lambda=133258628099375/157355086000112
+PASS moments p=31,r=37,H=31,M=540,a=5/142224,lambda=36955875/41997676
+PASS moments p=31,r=37,H=37,M=642,a=5/169752,lambda=15361773325/17598521304
+PASS moments p=31,r=37,H=1147,M=19512,a=5/5262432,lambda=1184263556975/1396990210406
+PASS moments p=31,r=37,H=35557,M=604482,a=5/163135512,lambda=802352853269725/947439973690056
+PASS completion q=33, p=3, r=11, e=1, f=1, seed=0, all 33 cyclic recurrence equations
+PASS completion q=33, p=3, r=11, e=1, f=1, seed=1, all 33 cyclic recurrence equations
+PASS completion q=33, p=3, r=11, e=1, f=1, seed=2, all 33 cyclic recurrence equations
+PASS completion q=35, p=5, r=7, e=1, f=1, seed=0, all 35 cyclic recurrence equations
+PASS completion q=35, p=5, r=7, e=1, f=1, seed=1, all 35 cyclic recurrence equations
+PASS completion q=35, p=5, r=7, e=1, f=1, seed=2, all 35 cyclic recurrence equations
+PASS completion q=153, p=3, r=17, e=2, f=1, seed=0, all 153 cyclic recurrence equations
+PASS completion q=153, p=3, r=17, e=2, f=1, seed=1, all 153 cyclic recurrence equations
+PASS completion q=153, p=3, r=17, e=2, f=1, seed=2, all 153 cyclic recurrence equations
+PASS completion q=363, p=3, r=11, e=1, f=2, seed=0, all 363 cyclic recurrence equations
+PASS completion q=363, p=3, r=11, e=1, f=2, seed=1, all 363 cyclic recurrence equations
+PASS completion q=363, p=3, r=11, e=1, f=2, seed=2, all 363 cyclic recurrence equations
+PASS completion q=275, p=5, r=11, e=2, f=1, seed=0, all 275 cyclic recurrence equations
+PASS completion q=275, p=5, r=11, e=2, f=1, seed=1, all 275 cyclic recurrence equations
+PASS completion q=275, p=5, r=11, e=2, f=1, seed=2, all 275 cyclic recurrence equations
+PASS completion q=1089, p=3, r=11, e=2, f=2, seed=0, all 1089 cyclic recurrence equations
+PASS completion q=1089, p=3, r=11, e=2, f=2, seed=1, all 1089 cyclic recurrence equations
+PASS completion q=1089, p=3, r=11, e=2, f=2, seed=2, all 1089 cyclic recurrence equations
+PASS completion q=847, p=7, r=11, e=1, f=2, seed=0, all 847 cyclic recurrence equations
+PASS completion q=847, p=7, r=11, e=1, f=2, seed=1, all 847 cyclic recurrence equations
+PASS completion q=847, p=7, r=11, e=1, f=2, seed=2, all 847 cyclic recurrence equations

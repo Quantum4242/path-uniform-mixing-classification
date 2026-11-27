@@ -1,0 +1,37 @@
+=== phase/verify_p19.py ===
+Cyclotomic relation verified; rank = 8; minor determinant = -2.
+Distinct positive Bohr frequencies = 90; Carathéodory bound = 91.
+Odd support 141, even support 52, joint support 7332.
+All 171 distinct spectral pairs verified exactly: {'0': 90, '-1/18': 81}.
+Mixing with 1/19 Haar measure gives the exact target moments.
+Independent exact spectral mixing check: all 361 entries equal 1/19.
+PASS (finite algebra certificate only; not a Lean proof).
+=== integer/verify_certificate.py ===
+PASS: all 171 pair targets consistent with 90 exact gap groups
+PASS: exact interval enclosure for 91 x 91 matrix
+||I-RB||_inf <= 87689342669405671129/500000000000000000000000000000
+||R(b-Bw0)||_inf <= 49781163298208067/100000000000000000000000000000
+||w_exact-w0||_inf <= 248905816491040335/499999999912310657330594328871
+min(w0) = 60053007/100000000000
+PASS: 361 exact mixing identities in Z[X]/(Phi40).
+Certified bounds: defect < 2e-10, weight error < 5e-13, min(w_exact) > 0.0006.
+PASS: B invertible; exact w=B^-1 b has all weights strictly positive and sum 1.
+=== compact/check_compact.py ===
+PASS: 8281 entry enclosures; 171 gap targets in 90 groups.
+PASS: 91 integer row certificates; global norm and exact rational bounds.
+PASS: 361 exact mixing identities in Z[X]/(Phi40).
+PASS: all conditions of the mathematical compact-certificate proof.
+=== compact/check_gap_formula.py ===
+PASS: simplified power coefficients match all 40 original residue vectors; all 171 gaps covered.
+=== compact/verify_radical.py ===
+PASS: radical recurrence, 19 energy intervals; no pi bounds
+PASS: all 8281 entries enclosed, same original A/Q approximation
+max interval width = 11698114893/100000000000000000000000000000
+max entrywise error <= 2499622479274106427527/500000000000000000000000000000
+PASS: all original integer matrix inequalities
+PASS: Taylor remainder bound 2^42/42! < 10^-30
+PASS: exact rational positivity bound: 11/20000
+Analytic lemmas and full Lean proof not yet compiled.
+
+PASS: both certificates use the same 91 times; CSV matches high-precision certificate.
+Python 3.13.5; SymPy 1.14.0

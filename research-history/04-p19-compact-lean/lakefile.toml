@@ -1,0 +1,5 @@
+name = "p19_certificate"
+version = "0.1.0"
+defaultTargets = ["P19"]
+[[lean_lib]]
+name = "P19"

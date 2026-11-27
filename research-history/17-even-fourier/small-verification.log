@@ -1,0 +1,17 @@
+NEGATIVE CONTROL q=12: exact equal gaps (1,5) and (3,6), opposite parity
+NEGATIVE CONTROL q=15: exact equal gaps (1,4) and (3,5), opposite parity
+NEGATIVE CONTROL q=21: exact equal gaps (3,7) and (6,9), opposite parity
+NEGATIVE CONTROL q=30: exact equal gaps (4,14) and (6,15), opposite parity
+PASS q=20, P_19: 171 full pairs; 26 seed orbits; G=16; exact
+PASS q=28, P_27: 351 full pairs; 32 seed orbits; G=24; exact
+PASS q=40, P_39: 741 full pairs; 56 seed orbits; G=32; exact
+PASS q=50, P_49: 1176 full pairs; 55 seed orbits; G=40; exact
+PASS q=56, P_55: 1485 full pairs; 70 seed orbits; G=48; exact
+PASS q=70, P_69: 2346 full pairs; 96 seed orbits; G=48; exact
+PASS q=80, P_79: 3081 full pairs; 114 seed orbits; G=64; exact
+PASS q=98, P_97: 4656 full pairs; 95 seed orbits; G=84; exact
+PASS q=100, P_99: 4851 full pairs; 133 seed orbits; G=80; exact
+PASS q=110, P_109: 5886 full pairs; 138 seed orbits; G=80; exact
+PASS q=112, P_111: 6105 full pairs; 144 seed orbits; G=96; exact
+PASS q=130, P_129: 8256 full pairs; 162 seed orbits; G=96; exact
+PASS q=140, P_139: 9591 full pairs; 232 seed orbits; G=96; exact

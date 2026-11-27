@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.olean
+*.ilean
+.lake/
+*.aux
+*.log
+*.out
+!verification/reproduction.log
+verification/integer/candidate-certificate.json

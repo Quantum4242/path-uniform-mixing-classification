@@ -1,0 +1,9 @@
+PASS: all 171 pair targets consistent with 90 exact gap groups
+PASS: exact interval enclosure for 91 x 91 matrix
+||I-RB||_inf <= 87689342669405671129/500000000000000000000000000000
+||R(b-Bw0)||_inf <= 49781163298208067/100000000000000000000000000000
+||w_exact-w0||_inf <= 248905816491040335/499999999912310657330594328871
+min(w0) = 60053007/100000000000
+PASS: 361 exact mixing identities in Z[X]/(Phi40).
+Certified bounds: defect < 2e-10, weight error < 5e-13, min(w_exact) > 0.0006.
+PASS: B invertible; exact w=B^-1 b has all weights strictly positive and sum 1.

@@ -1,0 +1,19 @@
+11 Lean definitions match DP formulas exactly: PASS
+odd_three_base shifted polynomial identity and positivity: PASS
+odd_three_extra shifted polynomial identity and positivity: PASS
+even_err0_num shifted polynomial identity and positivity: PASS
+even_err1_num shifted polynomial identity and positivity: PASS
+base0_p shifted polynomial identity and positivity: PASS
+base0_m shifted polynomial identity and positivity: PASS
+base1_pp shifted polynomial identity and positivity: PASS
+base1_pm shifted polynomial identity and positivity: PASS
+base1_mp shifted polynomial identity and positivity: PASS
+base1_mm shifted polynomial identity and positivity: PASS
+odd0_gap_num shifted polynomial identity and positivity: PASS
+odd0_non35_error_num shifted polynomial identity and positivity: PASS
+odd0_mult35_error_num shifted polynomial identity and positivity: PASS
+3 exceptional exact fraction inequalities: PASS
+35 central axes: 36365 vectors, symmetric 44 / antisymmetric 24; structural conditions PASS
+385 slice support: six ordered patterns, two up to permutation: PASS
+385 last slice: 243 tuples, no entry bound needed: PASS
+SOURCE-LEVEL CHECKS PASSED. Lean kernel compilation NOT performed.

@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.pyc
+verification/enumerate_lattice
+verification/enumerate_lattice.exe
+records/latest/
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.toc
+paper/*.synctex.gz
+
+research-history/**/enumerate_lattice
+research-history/**/enumerate_lattice.exe
+records/latest-supplements/

@@ -1,0 +1,22 @@
+PASS: 32 exact Laurent-polynomial kernel checks
+q=3, N=2, m=1, D=1, gap count bound=1, eta=1/16, k=32768, delta=1/65536
+  sample count has 11 decimal digits; duration upper bound < 10^7
+  support size <= 2; all parameter inequalities PASS
+q=9, N=8, m=4, D=3, gap count bound=16, eta=1/1024, k=536870912, delta=1/4294967296
+  sample count has 67 decimal digits; duration upper bound < 10^57
+  support size <= 17; all parameter inequalities PASS
+q=20, N=19, m=9, D=8, gap count bound=90, eta=1/13680, k=274877906944, delta=1/4947802324992
+  sample count has 209 decimal digits; duration upper bound < 10^196
+  support size <= 91; all parameter inequalities PASS
+q=35, N=34, m=17, D=12, gap count bound=289, eta=1/78608, k=35184372088832, delta=1/1196268651020288
+  sample count has 418 decimal digits; duration upper bound < 10^403
+  support size <= 290; all parameter inequalities PASS
+q=385, N=384, m=192, D=120, gap count bound=36864, eta=1/113246208, k=1180591620717411303424, delta=1/453347182355485940514816
+  sample count has 6944 decimal digits; duration upper bound < 10^6920
+  support size <= 36865; all parameter inequalities PASS
+q=429, N=428, m=214, D=120, gap count bound=45796, eta=1/156805504, k=2361183241434822606848, delta=1/1010586427334104075730944
+  sample count has 7521 decimal digits; duration upper bound < 10^7497
+  support size <= 45797; all parameter inequalities PASS
+q=595, N=594, m=297, D=192, gap count bound=88209, eta=1/419169168, k=18889465931478580854784, delta=1/11220342763298277027741696
+  sample count has 11517 decimal digits; duration upper bound < 10^11492
+  support size <= 88210; all parameter inequalities PASS

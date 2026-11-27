@@ -1,0 +1,173 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[a4paper,margin=25mm]{geometry}
+\usepackage{fontspec,amsmath,amssymb,amsthm,booktabs,array,hyperref,microtype}
+\setmainfont{Liberation Serif}
+\hypersetup{colorlinks=true,linkcolor=black,citecolor=black,urlcolor=blue}
+\setlength{\parindent}{1em}\setlength{\parskip}{3pt}
+\setlength{\emergencystretch}{3em}\sloppy
+\newcommand{\R}{\mathbb R}\newcommand{\Q}{\mathbb Q}\newcommand{\Z}{\mathbb Z}\newcommand{\T}{\mathbb T}
+\newcommand{\norm}[1]{\left\lVert #1\right\rVert_\infty}
+\DeclareMathOperator{\conv}{conv}\DeclareMathOperator{\ri}{ri}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\title{Uniform average mixing on the nineteen-vertex path\\\large An explicit integer-time certificate and a phase-torus proof}
+\author{}
+\date{27 November 2026 \\ \small AI-assisted research manuscript --- not peer reviewed}
+\begin{document}\maketitle
+\begin{abstract}
+We establish uniform average mixing for the continuous-time adjacency quantum walk on the path $P_{19}$. This size, corresponding to $q=20$, lies outside the existence and nonexistence families in Kang's arithmetic criterion (arXiv:2609.14463v1). We exhibit 91 distinct nonnegative integer readout times below 2000 and define their exact positive weights by a nonsingular real linear system. An outward-rounded integer interval certificate proves that the inverse defect is below $2\times10^{-10}$ and that every exact weight exceeds $6\times10^{-4}$. An independent proof uses a constrained fourth-root phase distribution and a relative-interior argument to pass from the phase torus to actual times. The accompanying code checks all 171 spectral pairs and 361 mixing identities with exact arithmetic. Only a finite gap-grouping lemma has been confirmed in Lean 4; the complete theorem has not been formally verified or independently peer reviewed.
+\end{abstract}
+\noindent\textbf{Keywords:} continuous-time quantum walk; path graph; randomized readout; cyclotomic field; interval certificate.
+\section{Introduction and statement}
+Let $A$ be the real adjacency matrix of $P_N$, with $A_{kl}=1$ when $|k-l|=1$ and zero otherwise. In units of unit hopping and $\hbar=1$, write $U(t)=\exp(itA)$ and $M(t)_{kl}=|U(t)_{kl}|^2$. A probability distribution $\mu$ on time is uniformly mixing when $\int M(t)\,d\mu(t)=J_N/N$, where $J_N$ is the all-ones matrix. This is distinct from instantaneous mixing and from the infinite-time Cesàro average \cite{baptista,godsil}.
+
+The arithmetic criterion of Kang \cite{kang} proves existence for $q=N+1$ prime, twice prime or a power of two, and nonexistence for $15\mid q$, $21\mid q$, or $6\mid q$ with $q\ge12$. Neither list contains $q=20$. We address that specific case. The novelty claim is limited to this case and the explicit protocol; an exhaustive priority claim is not made.
+\begin{theorem}\label{thm:main}
+There exist 91 distinct integers $t_j$ with $0\le t_j<2000$ and real numbers $w_j>0.0006$ such that $\sum_{j=1}^{91}w_j=1$ and
+\begin{equation}\label{eq:main}
+\sum_{j=1}^{91}w_j M(t_j)=\frac{J_{19}}{19}.
+\end{equation}
+The times are given in Table~\ref{tab:times}; the weights are defined exactly by Eq.~\eqref{eq:system}.
+\end{theorem}
+The first proof is computer-assisted: the finite checks in Sections 3--4 are supplied as executable exact-arithmetic certificates. The second proof (Section 5) establishes existence with at most 91 times, without specifying their values or relying on interval trigonometry. Both use the same spectral reduction.
+\section{Spectral reduction}
+For $q=N+1$ the eigenvalues and normalized eigenvectors are
+\[
+\theta_r=2\cos(r\pi/q),\quad v_r(k)=\sqrt{2/q}\sin(kr\pi/q),\quad 1\le r,k\le q-1.
+\]
+The sine addition formula and zero boundary values at $k=0,q$ give $Av_r=\theta_rv_r$. Strict decrease of cosine gives distinct eigenvalues; symmetry of $A$ implies orthogonality. Summing the finite geometric series of $q$th roots of unity gives $\sum_{k=1}^{q-1}\sin^2(kr\pi/q)=q/2$, proving normalization. Set $E_r=v_rv_r^T$. Expanding the squared modulus of $U(t)=\sum_r e^{it\theta_r}E_r$ yields
+\begin{equation}\label{eq:mix}
+\widehat M=\sum_r E_r^{\circ2}+2\sum_{r<s}y_{rs} E_r\circ E_s,\quad
+y_{rs}=\int\cos((\theta_r-\theta_s)t)\,d\mu(t).
+\end{equation}
+Here $\circ$ denotes entrywise multiplication. The following sufficient target is established in \cite{kang}; we include its verification.
+\begin{lemma}\label{lem:target}
+If $y_{rs}=-1/(q-1)$ for distinct equal-parity indices and $y_{rs}=0$ otherwise, then $\widehat M=J_N/N$.
+\end{lemma}
+\begin{proof}
+For $1\le k,l<q$ put $D=\delta_{kl}$, $F=\delta_{k+l,q}$ and $C(m)=\sum_{r=1}^{q-1}\cos(2\pi mr/q)=q\mathbf1_{q\mid m}-1$. Product-to-sum gives
+\begin{align*}
+\sum_r\sin^2(kr\pi/q)\sin^2(lr\pi/q)
+&=\tfrac14[C(0)-C(k)-C(l)+\tfrac12(C(k-l)+C(k+l))]\\
+&=q/4+q(D+F)/8.
+\end{align*}
+Thus $\sum_r E_r(k,l)^2=1/q+(D+F)/(2q)$, the path average identity of \cite{godsil}. Let $H_{kl}=F$ be reflection. Since $Hv_r=(-1)^{r+1}v_r$, the odd/even projector sums are $(I+H)/2$ and $(I-H)/2$. The sum of the squares of their $(k,l)$ entries is $(D+F)/2$. Substituting the target into \eqref{eq:mix} gives
+\[
+\widehat M_{kl}=\frac{q\sum_r E_r(k,l)^2-\big(\sum_{r\,\mathrm{odd}}E_r(k,l)\big)^2-\big(\sum_{r\,\mathrm{even}}E_r(k,l)\big)^2}{q-1}=\frac1{q-1}.\qedhere
+\]
+\end{proof}
+\section{Exact gap grouping and the integer-time protocol}
+Set $q=20$, $\zeta=e^{i\pi/20}$ and $p(X)=X^{16}-X^{12}+X^8-X^4+1=\Phi_{40}(X)$. The identity $(X^4+1)p(X)=X^{20}+1$ implies $p(\zeta)=0$, since $\zeta^{20}=-1$ and $\zeta^4\ne-1$. For each $r$ reduce $X^r+X^{(-r)\bmod40}$ modulo $p$ to a degree-$<16$ integer polynomial $T_r$. Then $T_r(\zeta)=\theta_r$. For the 171 pairs $1\le r<s\le19$, group by the 16 coefficients of $T_r-T_s$, retaining the first pair in lexicographic order. The exact enumeration in \texttt{verify\_certificate.py} yields 90 groups; each has a constant target $-1/19$ or 0. Irreducibility of $p$ implies the 90 representatives are distinct as real gaps (for the first proof, only equality within groups is needed).
+
+Let $(r_i,s_i)$ be the representatives, $i=1,\ldots,90$. Define a real $91\times91$ matrix $B$ with row zero consisting of ones, and
+\begin{equation}\label{eq:system}
+B_{ij}=\cos[(\theta_{r_i}-\theta_{s_i})t_j],\quad b_0=1,\quad b_i=-\tfrac1{19}\mathbf1_{r_i\equiv s_i\ (2)},\qquad w=B^{-1}b.
+\end{equation}
+Here $i\ge1$ and $j=1,\ldots,91$. Establishing invertibility and positivity suffices by Lemma~\ref{lem:target}. The selected times are fixed, not a solver-dependent part of the proof.
+\begin{table}[htbp]\centering\small
+\caption{Explicit nonnegative integer readout times, in increasing order.}\label{tab:times}
+\begin{tabular}{rrrrrrr}\toprule
+14 & 74 & 85 & 133 & 139 & 141 & 197 \\
+218 & 255 & 267 & 282 & 316 & 350 & 366 \\
+383 & 387 & 395 & 456 & 463 & 464 & 467 \\
+470 & 493 & 503 & 531 & 553 & 589 & 591 \\
+615 & 622 & 624 & 639 & 665 & 723 & 724 \\
+766 & 794 & 802 & 842 & 846 & 950 & 977 \\
+1011 & 1020 & 1054 & 1073 & 1116 & 1126 & 1133 \\
+1156 & 1161 & 1174 & 1183 & 1253 & 1269 & 1283 \\
+1341 & 1380 & 1387 & 1399 & 1448 & 1452 & 1458 \\
+1470 & 1481 & 1497 & 1529 & 1554 & 1578 & 1580 \\
+1619 & 1673 & 1680 & 1681 & 1709 & 1716 & 1727 \\
+1750 & 1753 & 1783 & 1798 & 1825 & 1862 & 1888 \\
+1896 & 1914 & 1915 & 1974 & 1975 & 1984 & 1994 \\
+\bottomrule\end{tabular}\end{table}
+
+The times were obtained by solving a linear feasibility problem over the candidate integers $0,\ldots,1999$ in floating point. This exploratory step is not trusted for correctness. The supplied \texttt{certificate.json} contains the times, the integer numerators of an approximate inverse $R$ and approximate weights $w^{(0)}$, both with denominator $10^{12}$. The CSV records rounded weights only. The exact weights are the real numbers in \eqref{eq:system}.
+\section{Rigorous certificate and proof of Theorem~\ref{thm:main}}
+\subsection{Outward-rounded interval arithmetic}
+Represent a real enclosure by $[a/S,b/S]$ with $a,b\in\Z$, $S=10^{30}$. Addition and negation are exact; multiplication takes the minimum and maximum of the four endpoint products, divides by $S$ and rounds the lower endpoint down and upper endpoint up. Positive integer division is analogous. These operations preserve containment by elementary interval arithmetic. The checker forms dot products with integer coefficients before dividing by their common denominator, avoiding floating point entirely.
+
+For the first enclosure method, bound $\pi$ by Machin's identity $\pi=16\arctan(1/5)-4\arctan(1/239)$. Forty terms of the alternating series for $\arctan(1/k)$ give a lower bound; adding $1/(81k^{81})$ gives an upper bound. The identity follows by tangent addition in the principal ranges. For each cosine argument subtract an integer multiple of $2\pi$, using the interval for $\pi$; the program verifies the reduced argument is in $[-4,4]$. Taylor's theorem through degree 61, with the odd coefficient zero, bounds the degree-60 cosine approximation by $4^{62}/62!<1/S$. The computed interval is enlarged by $1/S$ at both ends. This procedure encloses the 19 eigenvalues and every matrix entry.
+\subsection{Nonsingularity and exact positivity}
+Use the matrix infinity norm (maximum absolute row sum) and vector maximum norm. Exact interval computation gives the following rational bounds (displayed also in the reproduction log):
+\begin{align}
+\norm{I-RB}&\le\delta=\frac{87689342669405671129}{500000000000000000000000000000}<2\times10^{-10},\label{eq:defect}\\
+\norm{R(b-Bw^{(0)})}&\le c=\frac{49781163298208067}{100000000000000000000000000000},\\
+\min_j w_j^{(0)}&=\frac{60053007}{100000000000}.
+\end{align}
+If $Bv=0$, then $v=(I-RB)v$ and $\norm v\le\delta\norm v$. Hence $v=0$, and the square matrix $B$ is invertible. For the unique real solution $w$ of \eqref{eq:system},
+\[
+w-w^{(0)}=(I-RB)(w-w^{(0)})+R(b-Bw^{(0)}),\quad
+\norm{w-w^{(0)}}\le\frac{c}{1-\delta}<5\times10^{-13}.
+\]
+In particular $w_j>0.0006$. Row zero gives $\sum_j w_j=1$ exactly; all other rows give the required coherences in all gap classes. Lemma~\ref{lem:target} proves \eqref{eq:main}. This finishes the first proof. The bound on the approximation error concerns the weights, not the equality in \eqref{eq:main}, which is exact.
+\subsection{Independent compact certificate and second enclosure method}
+For independent verification, the repository includes a fixed-point certificate with $Q=10^8$, $\widetilde B=A_0/Q$, $\widetilde R=R_0/Q$, $u=u_0/Q$ and $b=b^{\mathrm{int}}/19$. The integer arrays are stored in \texttt{compact.json}. Here $A_0$ is not the path adjacency matrix. The compact checker verifies $|B_{ij}-\widetilde B_{ij}|\le1/Q$ and the integer inequalities
+\begin{align*}
+\max_i\sum_k|R_{0,ik}|&\le27Q,\\
+\max_i\sum_j|Q^2\delta_{ij}-\sum_kR_{0,ik}A_{0,kj}|&\le Q^2/10^4,\\
+\max_i|b_i^{\mathrm{int}}Q^2-19\sum_k A_{0,ik}u_{0,k}|&\le 19Q^2/10^6,\\
+\sum_j |u_{0,j}|&\le2Q,\quad\min_j u_{0,j}\ge60000.
+\end{align*}
+By submultiplicativity, $\norm{I-\widetilde R B}\le10^{-4}+27\cdot91/Q<10^{-3}$ and $\norm{\widetilde R(b-Bu)}\le27(10^{-6}+2/Q)<1/30000$. The same argument yields $\norm{w-u}<1/20000$ and $w_j>11/20000$. This weaker bound independently certifies strict positivity.
+
+A second enclosure avoids $\pi$ approximations. From $\cos(\pi/5)=(1+\sqrt5)/4$ and two positive half-angle formulas,
+\[
+\theta_1=\sqrt{2+\sqrt{(5+\sqrt5)/2}},\quad \theta_0=2,\quad\theta_{r+1}=\theta_1\theta_r-\theta_{r-1}.
+\]
+Integer square roots with outward rounding enclose each radical. For $y=(\theta_r-\theta_s)t_j$ let $x=y/4096$. The program verifies $|x|\le2$, encloses $\cos x$ by the degree-40 Taylor polynomial with remainder at most $2^{42}/42!<1/S$, and applies $c\mapsto2c^2-1$ twelve times, intersecting with $[-1,1]$ at each step. This yields an enclosure of $\cos y$. All 8281 compact entry checks pass by both methods. The radical-based method yields maximum entrywise discrepancy below $5\times10^{-9}$.
+\section{Second proof: a constrained phase law}
+This proof gives existence independently of the selected integer times. It uses the usual cyclotomic irreducibility theorem, Kronecker's density theorem \cite{hardy}, and finite-dimensional convexity \cite{rock}.
+\subsection{Phase closure}
+The positive eigenvalues $\theta_1,\ldots,\theta_9$ have exactly one independent rational relation:
+\begin{equation}\label{eq:rel}
+\theta_1-\theta_3-\theta_5+\theta_7+\theta_9=0.
+\end{equation}
+Indeed the matrix with columns the 16 coefficients of $T_r$, $1\le r\le9$, annihilates $(1,0,-1,0,-1,0,1,0,1)^T$. The minor formed by rows $0,1,2,5,6,7,8,9$ (zero-based) and columns $1,\ldots,8$ is
+\[
+L=\begin{pmatrix}
+0&0&0&1&0&0&0&0\\1&0&1&0&0&0&0&0\\0&2&0&0&0&0&0&0\\0&0&-1&0&1&0&0&0\\0&-1&0&0&0&1&0&0\\-1&0&0&0&0&0&1&0\\0&0&0&1&0&0&0&1\\0&0&1&0&0&0&0&0
+\end{pmatrix},\qquad \det L=-2.
+\]
+As $p$ is the minimal polynomial of $\zeta$, the rank is exactly eight, and the primitive integer relation generates the full lattice of integer relations. The closure of $t\mapsto(t\theta_1,\ldots,t\theta_9)$ in $(\R/2\pi\Z)^9$ is therefore the subtorus $H$ given by $\varphi_1-\varphi_3-\varphi_5+\varphi_7+\varphi_9=0\pmod{2\pi}$. Extend to all 19 modes by $\varphi_{10}=0$, $\varphi_{20-r}=-\varphi_r$.
+\subsection{Finite phase distribution}
+The following table specifies patterns in units of $\pi/2$ and their probabilities. Independently in each group, sample a pattern, uniformly permute its coordinates, and negate all coordinates with probability $1/2$. Use the five-coordinate law for $(\varphi_1,-\varphi_3,-\varphi_5,\varphi_7,\varphi_9)$, and the four-coordinate law for $(\varphi_2,\varphi_4,\varphi_6,\varphi_8)$.
+\begin{center}\begin{tabular}{@{}lr@{\qquad}lr@{}}\toprule
+\multicolumn{2}{c}{\(m=5\)}&\multicolumn{2}{c}{\(m=4\)}\\\midrule
+$(0,0,0,0,0)$&$1/96$&$(0,0,1,3)$&$1/6$\\
+$(0,0,0,2,2)$&$25/96$&$(0,2,2,3)$&$1/2$\\
+$(0,0,2,3,3)$&$5/36$&$(2,3,3,3)$&$1/18$\\
+$(0,1,1,3,3)$&$5/72$&$(1,3,3,3)$&$5/18$\\
+$(1,2,3,3,3)$&$25/48$&&\\\bottomrule
+\end{tabular}\end{center}
+The weights in each column sum to one; every five-coordinate pattern sums to zero modulo 4. Thus the resulting law $\nu$ is supported on $H$. For a length-$m$ pattern set $c_j=\cos(a_j\pi/2)$, $s_j=\sin(a_j\pi/2)$, $C=\sum c_j$, $S_1=\sum s_j$, $C_2=\sum c_j^2$, $S_2=\sum s_j^2$. Uniform permutation gives single-coordinate means $C/m$ and $(C_2-S_2)/m$ for cosine and double-angle cosine, respectively; distinct-coordinate products have means $(C^2-C_2)/(m(m-1))$ for cosines and $(S_1^2-S_2)/(m(m-1))$ for sines. Negation symmetry kills sine means and mixed products. Substitution of the table gives
+\begin{center}\begin{tabular}{lcc}\toprule
+Moment & Five-coordinate law & Four-coordinate law\\\midrule
+$\mathbb E\cos\varphi_i$ & $0$ & $-1/18$\\
+$\mathbb E\cos 2\varphi_i$ & $-1/18$ & $-1/18$\\
+$\mathbb E\cos\varphi_i\cos\varphi_j$ ($i\ne j$)&$-1/18$&$-1/18$\\
+$\mathbb E\sin\varphi_i\sin\varphi_j$ ($i\ne j$)&$0$&$0$\\\bottomrule
+\end{tabular}\end{center}
+Changing signs of the specified odd coordinates leaves these values invariant. Independence gives zero cross-parity moments. The zero mode and the reflected pairs use the single-angle and double-angle moments, respectively. Consequently all 171 distinct pairs satisfy
+\[
+\mathbb E_\nu\cos(\varphi_r-\varphi_s)=-\tfrac1{18}\mathbf1_{r\equiv s\ (2)}.
+\]
+Exact rational enumeration confirms 141 and 52 distinct states in the two groups, giving 7332 joint states; 81 pairs have moment $-1/18$ and 90 have zero.
+\subsection{Transfer to actual readout times}
+Define $F:H\to\R^{171}$ by $F(\varphi)_{rs}=\cos(\varphi_r-\varphi_s)$ and $K=\conv F(H)$. This convex hull is compact in finite dimensions. Each difference character is nontrivial on $H$: along the true phase flow its frequency is the nonzero $\theta_r-\theta_s$. Therefore normalized Haar measure $h$ on $H$ satisfies $\int F\,dh=0$ by character orthogonality. Full support implies $0\in\ri K$: otherwise a nonconstant supporting affine functional on $K$ would attain its maximum at the mean, which by continuity and full support forces it to be constant throughout $F(H)$, a contradiction.
+
+The law $\rho=(18\nu+h)/19$ has precisely the target coherence vector $y$. Since $y$ is a strict convex mixture of a point in $K$ and a point of its relative interior, $y\in\ri K$. Put $D=\{F(t\theta):t\in\R\}$. Density yields $\overline{\conv D}=K$; in finite dimensions $\ri(\conv D)=\ri K$ \cite{rock}. Hence $y\in\conv D$, not merely its closure. This distinction is essential: the discrete auxiliary phases need not be attained at actual times. As the coordinates of $D$ coincide within each of the 90 gap groups, its affine dimension is at most 90. Carathéodory's theorem gives a convex combination of at most 91 actual times. Replace negative times by their absolute values, since $M(-t)=M(t)$. Lemma~\ref{lem:target} proves existence. This proof does not assert that the times in Table~\ref{tab:times} arise from the auxiliary phase law.
+\section{Reproduction, limitations and disclosure}
+All five checkers were rerun during preparation of this manuscript; their actual output is in \path{verification/reproduction.log}. The two polynomial checks additionally verify, for every $(k,l)$, the identity \[20\sum F_r^2-\Big(\sum_{r\,\mathrm{odd}} F_r\Big)^2-\Big(\sum_{r\,\mathrm{even}} F_r\Big)^2=1600.\] in $\Z[X]/(p)$, where $F_r=T_{r(k-l)}-T_{r(k+l)}=40E_r(k,l)$ after evaluation at $\zeta$. This independently checks the 361 target entries. No tolerance or floating-point solver output is used as a proof premise.
+
+The Lean 4 gap certificate \texttt{P19.allGapChecks} was observed to pass in the official web editor (v4.37.0-rc1), with standard axioms \texttt{propext}, \texttt{Classical.choice}, \texttt{Quot.sound}. The larger matrix certificate has no confirmed completed build; analytic bridge files are uncompiled drafts. Interval soundness, spectral interpretation and the unconditional theorem are not fully linked in Lean. Accordingly this is an exact-arithmetic computer-assisted mathematical manuscript, not a fully formalized result. Neither minimal support nor shortest maximum time is claimed. A targeted public search on 27 November 2026 found no earlier solution for $q=20$; incomplete indexing and concurrent research prevent a conclusive priority claim. See the search record. No independent peer review is claimed.
+
+\noindent\textbf{AI disclosure.} ChatGPT assisted in literature search, proof development, numerical exploration, certificate generation, verification scripts, and manuscript drafting. The human release author must review the final manuscript and is responsible for the decision to publish it. No institutional endorsement is implied.
+\begin{thebibliography}{9}
+\bibitem{baptista} P. Baptista, G. Coutinho and V. Marques, \emph{Unexpected Averages of Mixing Matrices}, arXiv:2308.16378 (2023). \url{https://arxiv.org/abs/2308.16378}.
+\bibitem{kang} M. Kang, \emph{Arithmetic of Bohr Frequencies Governs Uniform Mixing in Randomly Timed Quantum Spin Chains}, arXiv:2609.14463v1 (2026). \url{https://arxiv.org/abs/2609.14463v1}.
+\bibitem{godsil} C. Godsil, Average mixing of continuous quantum walks, \emph{J. Combin. Theory Ser. A} \textbf{120} (2013), 1649--1662. \href{https://doi.org/10.1016/j.jcta.2013.05.006}{doi:10.1016/j.jcta.2013.05.006}.
+\bibitem{hardy} G. H. Hardy and E. M. Wright, \emph{An Introduction to the Theory of Numbers}, 6th ed., Oxford University Press (2008), Ch. XXIII.
+\bibitem{rock} R. T. Rockafellar, \emph{Convex Analysis}, Princeton University Press (1970), Thm. 6.3 and 11.6.
+\end{thebibliography}
+\end{document}
