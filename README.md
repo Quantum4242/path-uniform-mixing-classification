@@ -1,5 +1,7 @@
 # Uniform Average Mixing on Path Graphs
 
+[![Exact arithmetic verification](https://github.com/wangjiashu1/path-uniform-mixing-classification/actions/workflows/verify.yml/badge.svg)](https://github.com/wangjiashu1/path-uniform-mixing-classification/actions/workflows/verify.yml)
+
 **An arithmetic classification via positive Fourier densities** · Research preprint `v0.1.0` · 27 November 2026
 
 [English manuscript (PDF)](paper/paper-en.pdf) | [中文稿 (PDF)](paper/paper-zh.pdf) | [中文说明](README.zh-CN.md) | [Detailed proof](paper/detailed-proof.md) | [Review status](docs/REVIEW.md)
@@ -10,7 +12,15 @@
 
 Let `A` be the adjacency matrix of the path `P_N`, `N >= 2`, and `q = N+1`. Uniform average mixing asks for a single readout-time probability law satisfying `E |exp(itA)|^(entrywise 2) = J_N/N`. The candidate classification is
 
-$$P_{q-1}\text{ admits UAM}\quad\Longleftrightarrow\quad 15\nmid q,\quad21\nmid q,\quad(6\nmid q\ \text{or}\ q=6).$$
+**Proposed Classification Theorem**
+
+For every integer q ≥ 3, the path graph P<sub>q−1</sub> admits uniform average mixing if and only if:
+
+- 15 ∤ q
+- 21 ∤ q
+- 6 ∤ q or q = 6
+
+All three conditions must hold simultaneously.
 
 The negative direction, forced coherence reduction, and existence for primes, twice primes and powers of two are **Kang's results**, not new claims. The proposed positive proof for the remaining moduli uses low-degree nonnegative Fourier densities on cyclotomic phase groups and an exact inventory of short signed relations. The same construction gives finite laws on prescribed algebraic-step grids and a conditional uniform Haar floor and known-noise compensation theorem.
 
