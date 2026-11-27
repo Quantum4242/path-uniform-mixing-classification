@@ -1,0 +1,7 @@
+Arithmetic case partition checked for q=3..10000; proof is the congruence split.
+All 13 even finite exceptional moduli: PASS
+Group-size bound n>=35 for q>=142 (monotone formula): PASS
+All 26 recorded exact margins positive and case labels correct: PASS
+q=9 cube-root construction moments: PASS
+Known small-case ramp floors: PASS
+Noise bound constant: PASS

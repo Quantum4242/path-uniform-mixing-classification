@@ -1,0 +1,53 @@
+20 0 dimension 1 21 free vectors; 4 nonzero short relations
+  independent exhaustive list MATCH
+20 1 dimension 0 1 free vectors; 0 nonzero short relations
+  independent exhaustive list MATCH
+28 0 dimension 1 21 free vectors; 2 nonzero short relations
+  independent exhaustive list MATCH
+28 1 dimension 0 1 free vectors; 0 nonzero short relations
+  independent exhaustive list MATCH
+40 0 dimension 2 221 free vectors; 12 nonzero short relations
+  independent exhaustive list MATCH
+40 1 dimension 1 21 free vectors; 4 nonzero short relations
+  independent exhaustive list MATCH
+50 0 dimension 2 221 free vectors; 12 nonzero short relations
+  independent exhaustive list MATCH
+50 1 dimension 2 221 free vectors; 12 nonzero short relations
+  independent exhaustive list MATCH
+56 0 dimension 2 221 free vectors; 4 nonzero short relations
+  independent exhaustive list MATCH
+56 1 dimension 1 21 free vectors; 2 nonzero short relations
+  independent exhaustive list MATCH
+70 0 dimension 5 36365 free vectors; 72 nonzero short relations
+  independent exhaustive list MATCH
+70 1 dimension 5 36365 free vectors; 52 nonzero short relations
+  independent exhaustive list MATCH
+80 0 dimension 4 8361 free vectors; 40 nonzero short relations
+  independent exhaustive list MATCH
+80 1 dimension 3 1561 free vectors; 24 nonzero short relations
+  independent exhaustive list MATCH
+98 0 dimension 3 1561 free vectors; 6 nonzero short relations
+  independent exhaustive list MATCH
+98 1 dimension 3 1561 free vectors; 6 nonzero short relations
+  independent exhaustive list MATCH
+100 0 dimension 5 36365 free vectors; 60 nonzero short relations
+  independent exhaustive list MATCH
+100 1 dimension 4 8361 free vectors; 40 nonzero short relations
+  independent exhaustive list MATCH
+110 0 dimension 7 433905 free vectors; 72 nonzero short relations
+  independent exhaustive list MATCH
+110 1 dimension 7 433905 free vectors; 60 nonzero short relations
+  independent exhaustive list MATCH
+112 0 dimension 4 8361 free vectors; 8 nonzero short relations
+  independent exhaustive list MATCH
+112 1 dimension 3 1561 free vectors; 6 nonzero short relations
+  independent exhaustive list MATCH
+130 0 dimension 8 1256465 free vectors; 86 nonzero short relations
+  independent exhaustive list MATCH
+130 1 dimension 8 1256465 free vectors; 84 nonzero short relations
+  independent exhaustive list MATCH
+140 0 dimension 11 18474633 free vectors; 192 nonzero short relations
+  independent exhaustive list MATCH
+140 1 dimension 10 8097453 free vectors; 172 nonzero short relations
+  independent exhaustive list MATCH
+All 26 groups: PASS

@@ -1,0 +1,28 @@
+20 0 5 4 patterns {(2, 2, 2, 2, 2): 2, (1, 1, 1, 1, 1): 2} separate_margin 6016648.896 combined_margin 6016648.896 PASS
+20 1 4 0 patterns {} separate_margin 29887826.147460938 combined_margin 29887826.147460938 PASS
+28 0 7 2 patterns {(1, 1, 1, 1, 1, 1, 1): 2} separate_margin 14502791.271137027 combined_margin 14502791.271137027 PASS
+28 1 6 0 patterns {} separate_margin 25750816.377121914 combined_margin 25750816.377121914 PASS
+40 0 10 12 patterns {(1, 1, 1, 1, 1, 1, 1, 1, 1, 1): 4, (1, 1, 1, 1, 1): 4, (2, 2, 2, 2, 2): 4} separate_margin 11388577.7915 combined_margin 11388577.7915 PASS
+40 1 9 4 patterns {(2, 2, 2, 2, 2): 2, (1, 1, 1, 1, 1): 2} separate_margin 4873637.355586039 combined_margin 6026491.704313367 PASS
+50 0 12 12 patterns {(1, 1, 1, 1, 1, 1, 1, 1, 1, 1): 4, (1, 1, 1, 1, 1): 4, (2, 2, 2, 2, 2): 4} separate_margin 15959554.385706019 combined_margin 15959554.385706019 PASS
+50 1 12 12 patterns {(1, 1, 1, 1, 1, 1, 1, 1, 1, 1): 4, (2, 2, 2, 2, 2): 4, (1, 1, 1, 1, 1): 4} separate_margin 3278576.262044271 combined_margin 3824880.8276306908 PASS
+56 0 14 4 patterns {(1, 1, 1, 1, 1, 1, 1): 4} separate_margin 16299732.842383383 combined_margin 16299732.842383383 PASS
+56 1 13 2 patterns {(1, 1, 1, 1, 1, 1, 1): 2} separate_margin 17947618.067924794 combined_margin 18071075.879486013 PASS
+70 0 17 72 patterns {(2, 2, 2, 2, 2): 8, (1, 1, 1, 1, 1, 1, 1, 1, 1, 1): 16, (1, 1, 1, 1, 1, 1, 1, 1, 1): 12, (1, 1, 1, 1, 1, 1, 1, 1): 18, (1, 1, 1, 1, 1): 8, (1, 1, 1, 1, 1, 1, 1): 4, (1, 1, 1, 1, 1, 1, 1, 1, 2): 6} separate_margin 9906601.537721053 combined_margin 9906601.537721053 PASS
+70 1 17 52 patterns {(1, 1, 1, 1, 1, 1, 1): 4, (1, 1, 1, 1, 1, 1, 1, 1, 2): 24, (2, 2, 2, 2, 2): 6, (1, 1, 1, 1, 1, 1, 1, 1, 1, 1): 12, (1, 1, 1, 1, 1): 6} separate_margin 7056948.228852624 combined_margin 7098935.753331497 PASS
+80 0 20 40 patterns {(2, 2, 2, 2, 2): 8, (1, 1, 1, 1, 1, 1, 1, 1, 1, 1): 24, (1, 1, 1, 1, 1): 8} separate_margin 13519477.7765625 combined_margin 13519477.7765625 PASS
+80 1 19 24 patterns {(1, 1, 1, 1, 1): 6, (2, 2, 2, 2, 2): 6, (1, 1, 1, 1, 1, 1, 1, 1, 1, 1): 12} separate_margin 10863799.737072306 combined_margin 10969663.789619477 PASS
+98 0 24 6 patterns {(1, 1, 1, 1, 1, 1, 1): 6} separate_margin 17435703.177372687 combined_margin 17435703.177372687 PASS
+98 1 24 6 patterns {(1, 1, 1, 1, 1, 1, 1): 6} separate_margin 15146949.174110696 combined_margin 15146949.174110696 PASS
+100 0 25 60 patterns {(1, 1, 1, 1, 1, 1, 1, 1, 1, 1): 40, (1, 1, 1, 1, 1): 10, (2, 2, 2, 2, 2): 10} separate_margin 13832709.0572288 combined_margin 13832709.0572288 PASS
+100 1 24 40 patterns {(2, 2, 2, 2, 2): 8, (1, 1, 1, 1, 1, 1, 1, 1, 1, 1): 24, (1, 1, 1, 1, 1): 8} separate_margin 11781323.63604887 combined_margin 11811427.206747172 PASS
+110 0 27 72 patterns {(1, 1, 1, 1, 1, 1, 1, 1, 1, 1): 50, (1, 1, 1, 1, 1): 10, (2, 2, 2, 2, 2): 10, (1, 1, 1, 1, 1, 1, 1): 2} separate_margin 15291907.32518191 combined_margin 15291907.32518191 PASS
+110 1 27 60 patterns {(1, 1, 1, 1, 1): 10, (2, 2, 2, 2, 2): 10, (1, 1, 1, 1, 1, 1, 1, 1, 1, 1): 40} separate_margin 10273185.538998684 combined_margin 10283470.621090582 PASS
+112 0 28 8 patterns {(1, 1, 1, 1, 1, 1, 1): 8} separate_margin 15651236.766877733 combined_margin 15651236.766877733 PASS
+112 1 27 6 patterns {(1, 1, 1, 1, 1, 1, 1): 6} separate_margin 16689254.29908306 combined_margin 16689254.29908306 PASS
+130 0 32 86 patterns {(1, 1, 1, 1, 1, 1, 1, 1, 1, 1): 60, (2, 2, 2, 2, 2): 12, (1, 1, 1, 1, 1): 12, (1, 1, 1, 1, 1, 1, 1, 1): 2} separate_margin 15183387.76265335 combined_margin 15183387.76265335 PASS
+130 1 32 84 patterns {(1, 1, 1, 1, 1, 1, 1, 1, 1, 1): 60, (2, 2, 2, 2, 2): 12, (1, 1, 1, 1, 1): 12} separate_margin 10583742.231321096 combined_margin 10591347.852842093 PASS
+140 0 35 192 patterns {(1, 1, 1, 1, 1): 14, (1, 1, 1, 1, 1, 1, 1, 1, 1, 1): 154, (2, 2, 2, 2, 2): 14, (1, 1, 1, 1, 1, 1, 1): 10} separate_margin 13759993.800909622 combined_margin 13759993.800909622 PASS
+140 1 34 172 patterns {(2, 2, 2, 2, 2): 14, (1, 1, 1, 1, 1, 1, 1, 1, 1, 1): 76, (1, 1, 1, 1, 1, 1, 1, 1): 18, (1, 1, 1, 1, 1, 1, 1): 8, (1, 1, 1, 1, 1, 1, 1, 1, 2): 30, (1, 1, 1, 1, 1): 14, (1, 1, 1, 1, 1, 1, 1, 1, 1): 12} separate_margin 10020914.809799893 combined_margin 10027734.838607019 PASS
+both groups passed: [20, 28, 40, 50, 56, 70, 80, 98, 100, 110, 112, 130, 140]
+still need certificates: []

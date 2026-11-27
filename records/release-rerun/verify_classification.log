@@ -1,0 +1,9 @@
+central 35 symmetric 36365 axis vectors; nonzero-axis arrays 44 {(2, 2, 2, 2, 2): 2, (1, 1, 1, 1, 1, 1, 1, 1): 18, (1, 1, 1, 1, 1): 2, (1, 1, 1, 1, 1, 1, 1, 1, 2): 6, (1, 1, 1, 1, 1, 1, 1, 1, 1): 12, (1, 1, 1, 1, 1, 1, 1, 1, 1, 1): 4} PASS
+central 35 antisymmetric 36365 axis vectors; nonzero-axis arrays 24 {(1, 1, 1, 1, 1, 1, 1, 1, 2): 24} PASS
+mixed central 5 11 symmetric cases [(4, 8, 20), (4, 10, 14)] antisymmetric none: PASS
+mixed central 5 13 symmetric cases [(4, 12, 16)] antisymmetric none: PASS
+mixed central 5 17 symmetric cases [(4, 16, 20)] antisymmetric none: PASS
+mixed central 7 11 symmetric cases [(6, 10, 16)] antisymmetric none: PASS
+mixed central 7 13 symmetric cases [(6, 12, 18)] antisymmetric none: PASS
+central 385 symmetric exceptional slice: all 243 axis tuples PASS
+all exceptional even moduli: [20, 28, 40, 50, 56, 70, 80, 98, 100, 110, 112, 130, 140] PASS

@@ -1,0 +1,37 @@
+q= 9 radical= 3 small-prime conductor= 3 zero/nonzero= 9 27 PASS
+q= 25 radical= 5 small-prime conductor= 5 zero/nonzero= 9 27 PASS
+q= 27 radical= 3 small-prime conductor= 3 zero/nonzero= 9 27 PASS
+q= 33 radical= 33 small-prime conductor= 33 zero/nonzero= 9 27 PASS
+q= 35 radical= 35 small-prime conductor= 35 zero/nonzero= 9 27 PASS
+q= 49 radical= 7 small-prime conductor= 7 zero/nonzero= 9 27 PASS
+q= 55 radical= 55 small-prime conductor= 55 zero/nonzero= 9 27 PASS
+q= 77 radical= 77 small-prime conductor= 77 zero/nonzero= 9 27 PASS
+q= 99 radical= 33 small-prime conductor= 33 zero/nonzero= 9 27 PASS
+q= 105 radical= 105 small-prime conductor= 105 zero/nonzero= 9 27 PASS
+q= 175 radical= 35 small-prime conductor= 35 zero/nonzero= 9 27 PASS
+q= 225 radical= 15 small-prime conductor= 15 zero/nonzero= 9 27 PASS
+q= 245 radical= 35 small-prime conductor= 35 zero/nonzero= 9 27 PASS
+q= 275 radical= 55 small-prime conductor= 55 zero/nonzero= 9 27 PASS
+q= 385 radical= 385 small-prime conductor= 385 zero/nonzero= 9 27 PASS
+q= 429 radical= 429 small-prime conductor= 429 zero/nonzero= 9 27 PASS
+q= 539 radical= 77 small-prime conductor= 77 zero/nonzero= 9 27 PASS
+q= 595 radical= 595 small-prime conductor= 595 zero/nonzero= 9 27 PASS
+q= 665 radical= 665 small-prime conductor= 665 zero/nonzero= 9 27 PASS
+q= 805 radical= 805 small-prime conductor= 35 zero/nonzero= 9 27 PASS
+q= 1155 radical= 1155 small-prime conductor= 1155 zero/nonzero= 9 27 PASS
+q= 20 radical= 5 small-prime conductor= 5 zero/nonzero= 9 27 PASS
+q= 28 radical= 7 small-prime conductor= 7 zero/nonzero= 9 27 PASS
+q= 40 radical= 5 small-prime conductor= 5 zero/nonzero= 9 27 PASS
+q= 70 radical= 35 small-prime conductor= 35 zero/nonzero= 9 27 PASS
+q= 98 radical= 7 small-prime conductor= 7 zero/nonzero= 9 27 PASS
+q= 100 radical= 5 small-prime conductor= 5 zero/nonzero= 9 27 PASS
+q= 140 radical= 35 small-prime conductor= 35 zero/nonzero= 9 27 PASS
+q= 350 radical= 35 small-prime conductor= 35 zero/nonzero= 9 27 PASS
+q= 700 radical= 35 small-prime conductor= 35 zero/nonzero= 9 27 PASS
+q= 320 radical= 5 small-prime conductor= 5 zero/nonzero= 9 27 PASS
+q= 1610 radical= 805 small-prime conductor= 35 zero/nonzero= 9 27 PASS
+q= 3036 radical= 759 small-prime conductor= 33 zero/nonzero= 9 27 PASS
+q= 4232 radical= 23 small-prime conductor= 1 zero/nonzero= 0 36 PASS
+mixed conductors [35, 55, 65, 77, 85, 91, 385] PASS
+mixed conductors [33, 39, 51, 57] PASS
+All 34 polynomial identities and 1224 exact sparse comparisons PASS; zero/nonzero 297 927

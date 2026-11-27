@@ -1,0 +1,48 @@
+bias 0 pattern (1, 1, 1, 1, 1) one relation error bound 30*(4583117*n**2 + 36959794*n - 49677320)/n**4
+bias 0 pattern (1, 1, 1, 1, 1, 1, 1) one relation error bound 960120*(389*n + 1778)/n**4
+bias 0 pattern (1, 1, 1, 1, 1, 1, 1, 1) one relation error bound 1280160*(2183*n - 889)/n**4
+bias 0 pattern (1, 1, 1, 1, 1, 1, 1, 1, 1) one relation error bound 1463222880/n**4
+bias 0 pattern (1, 1, 1, 1, 1, 1, 1, 1, 1, 1) one relation error bound 7316114400/n**4
+bias 0 pattern (2, 2, 2, 2, 2) one relation error bound 254031750/n**4
+bias 0 pattern (1, 1, 1, 1, 1, 1, 1, 1, 2) one relation error bound 3739347360/n**4
+bias 0 ALL total bound 12*(4583117*n**3 + 117542015*n**2 + 6833118795*n + 18802301105)/n**4
+All-n >= 35 positivity: PASS
+n 17 bound 2297421801312/83521 below 14500000? False
+n 20 bound 143487851403/8000 below 14500000? False
+n 25 bound 803292560352/78125 below 14500000? True
+n 27 bound 1516776517664/177147 below 14500000? True
+n 30 bound 90665567491/13500 below 14500000? True
+n 34 bound 1701425220129/334084 below 14500000? True
+n 35 bound 4187416224/875 below 14500000? True
+n 40 bound 464108258943/128000 below 14500000? True
+n 50 bound 736321742013/312500 below 14500000? True
+n 60 bound 368378790961/216000 below 14500000? True
+n 69 bound 10222000855712/7555707 below 14500000? True
+n 70 bound 226721624679/171500 below 14500000? True
+n 100 bound 3876390798363/5000000 below 14500000? True
+n 200 bound 25651225596063/80000000 below 14500000? True
+no7 bound 12*(4583117*n**3 + 85733890*n**2 + 242932585*n + 7410952920)/n**4 n>=27 True
+bias 1 pattern (1, 1, 1, 1, 1) one relation error bound 30*(25968783*n**2 + 77906880*n - 240935002)/n**4
+bias 1 pattern (1, 1, 1, 1, 1, 1, 1) one relation error bound 1280160*(2183*n - 1651)/n**4
+bias 1 pattern (1, 1, 1, 1, 1, 1, 1, 1) one relation error bound 1280160*(2183*n - 1651)/n**4
+bias 1 pattern (1, 1, 1, 1, 1, 1, 1, 1, 1) one relation error bound 7316114400/n**4
+bias 1 pattern (1, 1, 1, 1, 1, 1, 1, 1, 1, 1) one relation error bound 7316114400/n**4
+bias 1 pattern (2, 2, 2, 2, 2) one relation error bound 254031750/n**4
+bias 1 pattern (1, 1, 1, 1, 1, 1, 1, 1, 2) one relation error bound 3739347360/n**4
+bias 1 ALL total bound 12*(25968783*n**3 + 323062731*n**2 + 7159146083*n + 22249229695)/n**4
+All-n >= 35 positivity: PASS
+n 17 bound 4378853678928/83521 below 14500000? False
+n 20 bound 301444504653/8000 below 14500000? False
+n 25 bound 1941370375248/78125 below 14500000? False
+n 27 bound 3848809842496/177147 below 14500000? False
+n 30 bound 245787442217/13500 below 14500000? False
+n 34 bound 4979393281755/334084 below 14500000? False
+n 35 bound 122193103488/8575 below 14500000? True
+n 40 bound 1492510532769/128000 below 14500000? True
+n 50 bound 2660376741807/312500 below 14500000? True
+n 60 bound 288963238171/43200 below 14500000? True
+n 69 bound 42341243625040/7555707 below 14500000? True
+n 70 bound 944030520549/171500 below 14500000? True
+n 100 bound 17962544488797/5000000 below 14500000? True
+n 200 bound 133276111011777/80000000 below 14500000? True
+no7 bound 12*(25968783*n**3 + 126680976*n**2 + 455192003*n + 6611599680)/n**4 n>=27 True
